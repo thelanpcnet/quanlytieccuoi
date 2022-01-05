@@ -1,0 +1,115 @@
+﻿<controls:MetroWindow x:Class="QuanLyTiecCuoi.MainWindow"
+                      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+                      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                      xmlns:local="clr-namespace:QuanLyTiecCuoi"
+                      xmlns:views="clr-namespace:QuanLyTiecCuoi.UserControls"        
+                      xmlns:controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro" 
+                      xmlns:i="http://schemas.microsoft.com/xaml/behaviors"
+                      mc:Ignorable="d"
+                      xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+                      DataContext="{StaticResource MainVM}"
+                      Title="Quản lý Tiệc Cưới" Height="700" Width="1000"
+                      BorderThickness="0" 
+                      Name="Mainwindow"
+                      WindowStartupLocation="CenterScreen" TitleCharacterCasing="Upper" WindowTitleBrush="#FF20858F">
+    <Grid>
+        <Grid.Resources>
+            <DataTemplate x:Key="MenuItemTemplate" DataType="{x:Type controls:HamburgerMenuIconItem}">
+                <Grid Height="40">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="44" />
+                        <ColumnDefinition />
+                    </Grid.ColumnDefinitions>
+                    <Grid Grid.Column="0">
+                        <Viewbox ToolTip="{Binding Label}" Width="24" Height="24" 
+                                 VerticalAlignment="Center" HorizontalAlignment="Left" Margin="3,0,0,0">
+                            <Image Source="{Binding Icon}">
+                            </Image>
+                        </Viewbox>
+                    </Grid>
+                    <TextBlock Grid.Column="1"
+                    VerticalAlignment="Center"
+                    FontSize="15"
+                    Foreground="White"
+                    Text="{Binding Label}" />
+                </Grid>
+            </DataTemplate>
+        </Grid.Resources>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="25*"/>
+            <RowDefinition Height="644*"/>
+        </Grid.RowDefinitions>
+        <Grid.Background>
+            <ImageBrush ImageSource="photos/mainbg.png" Stretch="Fill"/>
+        </Grid.Background>
+        <controls:HamburgerMenu
+                OpenPaneLength="150"
+                x:Name="HamburgerMenuControl"
+                ItemTemplate="{StaticResource MenuItemTemplate}"
+                OptionsItemTemplate="{StaticResource MenuItemTemplate}"
+                Foreground="White"
+                PaneBackground="#FF2DB0AA"
+                DisplayMode="CompactInline"
+                ItemClick="HamburgerMenuControl_OnItemClick"
+                Grid.Column="0" Background="#FFB64660" Grid.Row="0" 
+                CompactPaneLength="32" HamburgerWidth="32" HamburgerHeight="32"
+                IsPaneOpen="True" PaneForeground="White" controls:ScrollViewerHelper.IsHorizontalScrollWheelEnabled="True" Grid.RowSpan="2" Margin="0">
+            <controls:HamburgerMenu.ItemsSource>
+                <controls:HamburgerMenuItemCollection>
+                    <controls:HamburgerMenuIconItem IsVisible="{Binding XemSanh}" x:Name="itm_Sanh" Label="Sảnh" Icon="photos/ic_hall1.png">
+                        <controls:HamburgerMenuIconItem.Tag>
+                            <views:usc_Sanh />
+                        </controls:HamburgerMenuIconItem.Tag>
+                    </controls:HamburgerMenuIconItem>
+                    <controls:HamburgerMenuIconItem IsVisible="{Binding XemTiec}" x:Name="itm_Tiec" Label="Tiệc" Icon="photos/ic_wdc.png">
+                        <controls:HamburgerMenuIconItem.Tag>
+                            <views:usc_Tiec />
+                        </controls:HamburgerMenuIconItem.Tag>
+                    </controls:HamburgerMenuIconItem>
+                    <controls:HamburgerMenuIconItem IsVisible="{Binding XemHoaDon}" x:Name="itm_Hoadon" Label="Hóa đơn" Icon="photos/ic_bill.png">
+                        <controls:HamburgerMenuIconItem.Tag>
+                            <views:usc_Hoadon/>
+                        </controls:HamburgerMenuIconItem.Tag>
+                    </controls:HamburgerMenuIconItem>
+                    <controls:HamburgerMenuIconItem IsVisible="{Binding XemDoanhThu}" x:Name="itm_Doanhthu" Label="Doanh thu" Icon="photos/ic_dt.png">
+                        <controls:HamburgerMenuIconItem.Tag>
+                            <views:usc_Doanhthu />
+                        </controls:HamburgerMenuIconItem.Tag>
+                    </controls:HamburgerMenuIconItem>
+                    <controls:HamburgerMenuIconItem IsVisible="{Binding XemMonAn}" x:Name="itm_Monan" Label="Món ăn" Icon="photos/ic_faw.png">
+                        <controls:HamburgerMenuIconItem.Tag>
+                            <views:usc_Monan />
+                        </controls:HamburgerMenuIconItem.Tag>
+                    </controls:HamburgerMenuIconItem>
+                    <controls:HamburgerMenuIconItem IsVisible="{Binding XemDichVu}" x:Name="itm_Dichvu" Label="Dịch vụ" Icon="photos/ic_ws.png">
+                        <controls:HamburgerMenuIconItem.Tag>
+                            <views:usc_Dichvu />
+                        </controls:HamburgerMenuIconItem.Tag>
+                    </controls:HamburgerMenuIconItem>
+                    <controls:HamburgerMenuIconItem IsVisible="{Binding XemQuiDinh}" x:Name="itm_Quidinh" Label="Qui định" Icon="photos/ic_rule.png">
+                        <controls:HamburgerMenuIconItem.Tag>
+                            <views:usc_Quidinh />
+                        </controls:HamburgerMenuIconItem.Tag>
+                    </controls:HamburgerMenuIconItem>
+                    <controls:HamburgerMenuIconItem IsVisible="{Binding XemPhanQuyen}" x:Name="itm_Phanquyen" Label="Phân quyền" Icon="photos/ic_us.png">
+                        <controls:HamburgerMenuIconItem.Tag>
+                            <views:usc_Phanquyen />
+                        </controls:HamburgerMenuIconItem.Tag>
+                    </controls:HamburgerMenuIconItem>
+                </controls:HamburgerMenuItemCollection>
+            </controls:HamburgerMenu.ItemsSource>
+            <controls:HamburgerMenu.ContentTemplate>
+                <DataTemplate DataType="{x:Type controls:HamburgerMenuItem}">
+                    <Grid x:Name="TheContentGrid">
+                        <ContentControl x:Name="TheContent"
+                                        Grid.Row="1"
+                                        Focusable="False"
+                                        Content="{Binding Tag}" />
+                    </Grid>
+                </DataTemplate>
+            </controls:HamburgerMenu.ContentTemplate>
+        </controls:HamburgerMenu>
+    </Grid>
+</controls:MetroWindow>

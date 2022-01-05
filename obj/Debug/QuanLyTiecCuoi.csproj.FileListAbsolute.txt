@@ -1,0 +1,363 @@
+C:\Users\Admin\Desktop\QuanLyTiecCuoi-master\bin\Debug\Database.mdf
+C:\Users\Admin\Desktop\QuanLyTiecCuoi-master\bin\Debug\Database_log.ldf
+C:\Users\Admin\Desktop\QuanLyTiecCuoi-master\bin\Debug\DatBanvaDichVuWindow.xaml.cs
+C:\Users\Admin\Desktop\QuanLyTiecCuoi-master\bin\Debug\QuanLyTiecCuoi.exe.config
+C:\Users\Admin\Desktop\QuanLyTiecCuoi-master\bin\Debug\QuanLyTiecCuoi.exe
+C:\Users\Admin\Desktop\QuanLyTiecCuoi-master\bin\Debug\QuanLyTiecCuoi.pdb
+C:\Users\Admin\Desktop\QuanLyTiecCuoi-master\bin\Debug\ControlzEx.dll
+C:\Users\Admin\Desktop\QuanLyTiecCuoi-master\bin\Debug\EntityFramework.dll
+C:\Users\Admin\Desktop\QuanLyTiecCuoi-master\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Admin\Desktop\QuanLyTiecCuoi-master\bin\Debug\MahApps.Metro.dll
+C:\Users\Admin\Desktop\QuanLyTiecCuoi-master\bin\Debug\MaterialDesignColors.dll
+C:\Users\Admin\Desktop\QuanLyTiecCuoi-master\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\Admin\Desktop\QuanLyTiecCuoi-master\bin\Debug\Microsoft.Expression.Interactions.dll
+C:\Users\Admin\Desktop\QuanLyTiecCuoi-master\bin\Debug\Microsoft.Xaml.Behaviors.dll
+C:\Users\Admin\Desktop\QuanLyTiecCuoi-master\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\Admin\Desktop\QuanLyTiecCuoi-master\bin\Debug\ControlzEx.pdb
+C:\Users\Admin\Desktop\QuanLyTiecCuoi-master\bin\Debug\ControlzEx.xml
+C:\Users\Admin\Desktop\QuanLyTiecCuoi-master\bin\Debug\EntityFramework.xml
+C:\Users\Admin\Desktop\QuanLyTiecCuoi-master\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Admin\Desktop\QuanLyTiecCuoi-master\bin\Debug\MahApps.Metro.pdb
+C:\Users\Admin\Desktop\QuanLyTiecCuoi-master\bin\Debug\MahApps.Metro.xml
+C:\Users\Admin\Desktop\QuanLyTiecCuoi-master\bin\Debug\MaterialDesignColors.pdb
+C:\Users\Admin\Desktop\QuanLyTiecCuoi-master\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\Admin\Desktop\QuanLyTiecCuoi-master\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\Admin\Desktop\QuanLyTiecCuoi-master\bin\Debug\Microsoft.Expression.Interactions.xml
+C:\Users\Admin\Desktop\QuanLyTiecCuoi-master\bin\Debug\Microsoft.Xaml.Behaviors.pdb
+C:\Users\Admin\Desktop\QuanLyTiecCuoi-master\bin\Debug\Microsoft.Xaml.Behaviors.xml
+C:\Users\Admin\Desktop\QuanLyTiecCuoi-master\bin\Debug\System.Windows.Interactivity.xml
+C:\Users\Admin\Desktop\QuanLyTiecCuoi-master\obj\Debug\QuanLyTiecCuoi.csprojAssemblyReference.cache
+C:\Users\Admin\Desktop\QuanLyTiecCuoi-master\obj\Debug\UserControls\usc_Tiec.baml
+C:\Users\Admin\Desktop\QuanLyTiecCuoi-master\obj\Debug\CT_PhieuDatBanWindow.g.cs
+C:\Users\Admin\Desktop\QuanLyTiecCuoi-master\obj\Debug\CT_PhieuDatBanxaml.g.cs
+C:\Users\Admin\Desktop\QuanLyTiecCuoi-master\obj\Debug\DSTiecChuaThanhToan.g.cs
+C:\Users\Admin\Desktop\QuanLyTiecCuoi-master\obj\Debug\HoaDon.g.cs
+C:\Users\Admin\Desktop\QuanLyTiecCuoi-master\obj\Debug\InHoaDon.g.cs
+C:\Users\Admin\Desktop\QuanLyTiecCuoi-master\obj\Debug\Login.g.cs
+C:\Users\Admin\Desktop\QuanLyTiecCuoi-master\obj\Debug\MainWindow.g.cs
+C:\Users\Admin\Desktop\QuanLyTiecCuoi-master\obj\Debug\DatBanvaDichVuWindow.g.cs
+C:\Users\Admin\Desktop\QuanLyTiecCuoi-master\obj\Debug\UserControls\usc_Dichvu.g.cs
+C:\Users\Admin\Desktop\QuanLyTiecCuoi-master\obj\Debug\UserControls\usc_Doanhthu.g.cs
+C:\Users\Admin\Desktop\QuanLyTiecCuoi-master\obj\Debug\UserControls\usc_Hoadon.g.cs
+C:\Users\Admin\Desktop\QuanLyTiecCuoi-master\obj\Debug\UserControls\usc_Monan.g.cs
+C:\Users\Admin\Desktop\QuanLyTiecCuoi-master\obj\Debug\UserControls\usc_Phanquyen.g.cs
+C:\Users\Admin\Desktop\QuanLyTiecCuoi-master\obj\Debug\UserControls\usc_Quidinh.g.cs
+C:\Users\Admin\Desktop\QuanLyTiecCuoi-master\obj\Debug\UserControls\usc_Sanh.g.cs
+C:\Users\Admin\Desktop\QuanLyTiecCuoi-master\obj\Debug\UserControls\usc_Tiec.g.cs
+C:\Users\Admin\Desktop\QuanLyTiecCuoi-master\obj\Debug\App.g.cs
+C:\Users\Admin\Desktop\QuanLyTiecCuoi-master\obj\Debug\QuanLyTiecCuoi_Content.g.cs
+C:\Users\Admin\Desktop\QuanLyTiecCuoi-master\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Admin\Desktop\QuanLyTiecCuoi-master\obj\Debug\QuanLyTiecCuoi_MarkupCompile.cache
+C:\Users\Admin\Desktop\QuanLyTiecCuoi-master\obj\Debug\QuanLyTiecCuoi_MarkupCompile.lref
+C:\Users\Admin\Desktop\QuanLyTiecCuoi-master\obj\Debug\App.baml
+C:\Users\Admin\Desktop\QuanLyTiecCuoi-master\obj\Debug\CT_PhieuDatBanWindow.baml
+C:\Users\Admin\Desktop\QuanLyTiecCuoi-master\obj\Debug\CT_PhieuDatBanxaml.baml
+C:\Users\Admin\Desktop\QuanLyTiecCuoi-master\obj\Debug\DSTiecChuaThanhToan.baml
+C:\Users\Admin\Desktop\QuanLyTiecCuoi-master\obj\Debug\HoaDon.baml
+C:\Users\Admin\Desktop\QuanLyTiecCuoi-master\obj\Debug\InHoaDon.baml
+C:\Users\Admin\Desktop\QuanLyTiecCuoi-master\obj\Debug\Login.baml
+C:\Users\Admin\Desktop\QuanLyTiecCuoi-master\obj\Debug\MainWindow.baml
+C:\Users\Admin\Desktop\QuanLyTiecCuoi-master\obj\Debug\DatBanvaDichVuWindow.baml
+C:\Users\Admin\Desktop\QuanLyTiecCuoi-master\obj\Debug\UserControls\usc_Dichvu.baml
+C:\Users\Admin\Desktop\QuanLyTiecCuoi-master\obj\Debug\UserControls\usc_Doanhthu.baml
+C:\Users\Admin\Desktop\QuanLyTiecCuoi-master\obj\Debug\UserControls\usc_Hoadon.baml
+C:\Users\Admin\Desktop\QuanLyTiecCuoi-master\obj\Debug\UserControls\usc_Monan.baml
+C:\Users\Admin\Desktop\QuanLyTiecCuoi-master\obj\Debug\UserControls\usc_Phanquyen.baml
+C:\Users\Admin\Desktop\QuanLyTiecCuoi-master\obj\Debug\UserControls\usc_Quidinh.baml
+C:\Users\Admin\Desktop\QuanLyTiecCuoi-master\obj\Debug\UserControls\usc_Sanh.baml
+C:\Users\Admin\Desktop\QuanLyTiecCuoi-master\obj\Debug\QuanLyTiecCuoi.g.resources
+C:\Users\Admin\Desktop\QuanLyTiecCuoi-master\obj\Debug\QuanLyTiecCuoi.Properties.Resources.resources
+C:\Users\Admin\Desktop\QuanLyTiecCuoi-master\obj\Debug\QuanLyTiecCuoi.csproj.GenerateResource.cache
+C:\Users\Admin\Desktop\QuanLyTiecCuoi-master\obj\Debug\QuanLyTiecCuoi.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\QuanLyTiecCuoi-master\obj\Debug\QuanLyTiecCuoi.csproj.CopyComplete
+C:\Users\Admin\Desktop\QuanLyTiecCuoi-master\obj\Debug\QuanLyTiecCuoi.exe
+C:\Users\Admin\Desktop\QuanLyTiecCuoi-master\obj\Debug\QuanLyTiecCuoi.pdb
+C:\HK1-2021-2022\Nhp mon cong nghe phan mem\QuanLyTiecCuoi-master\bin\Debug\DatBanvaDichVuWindow.xaml.cs
+C:\HK1-2021-2022\Nhp mon cong nghe phan mem\QuanLyTiecCuoi-master\bin\Debug\Database.mdf
+C:\HK1-2021-2022\Nhp mon cong nghe phan mem\QuanLyTiecCuoi-master\bin\Debug\Database_log.ldf
+C:\HK1-2021-2022\Nhp mon cong nghe phan mem\QuanLyTiecCuoi-master\bin\Debug\QuanLyTiecCuoi.exe.config
+C:\HK1-2021-2022\Nhp mon cong nghe phan mem\QuanLyTiecCuoi-master\bin\Debug\QuanLyTiecCuoi.exe
+C:\HK1-2021-2022\Nhp mon cong nghe phan mem\QuanLyTiecCuoi-master\bin\Debug\QuanLyTiecCuoi.pdb
+C:\HK1-2021-2022\Nhp mon cong nghe phan mem\QuanLyTiecCuoi-master\bin\Debug\ControlzEx.dll
+C:\HK1-2021-2022\Nhp mon cong nghe phan mem\QuanLyTiecCuoi-master\bin\Debug\EntityFramework.dll
+C:\HK1-2021-2022\Nhp mon cong nghe phan mem\QuanLyTiecCuoi-master\bin\Debug\EntityFramework.SqlServer.dll
+C:\HK1-2021-2022\Nhp mon cong nghe phan mem\QuanLyTiecCuoi-master\bin\Debug\MahApps.Metro.dll
+C:\HK1-2021-2022\Nhp mon cong nghe phan mem\QuanLyTiecCuoi-master\bin\Debug\MaterialDesignColors.dll
+C:\HK1-2021-2022\Nhp mon cong nghe phan mem\QuanLyTiecCuoi-master\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\HK1-2021-2022\Nhp mon cong nghe phan mem\QuanLyTiecCuoi-master\bin\Debug\Microsoft.Expression.Interactions.dll
+C:\HK1-2021-2022\Nhp mon cong nghe phan mem\QuanLyTiecCuoi-master\bin\Debug\Microsoft.Xaml.Behaviors.dll
+C:\HK1-2021-2022\Nhp mon cong nghe phan mem\QuanLyTiecCuoi-master\bin\Debug\System.Windows.Interactivity.dll
+C:\HK1-2021-2022\Nhp mon cong nghe phan mem\QuanLyTiecCuoi-master\bin\Debug\ControlzEx.pdb
+C:\HK1-2021-2022\Nhp mon cong nghe phan mem\QuanLyTiecCuoi-master\bin\Debug\ControlzEx.xml
+C:\HK1-2021-2022\Nhp mon cong nghe phan mem\QuanLyTiecCuoi-master\bin\Debug\EntityFramework.xml
+C:\HK1-2021-2022\Nhp mon cong nghe phan mem\QuanLyTiecCuoi-master\bin\Debug\EntityFramework.SqlServer.xml
+C:\HK1-2021-2022\Nhp mon cong nghe phan mem\QuanLyTiecCuoi-master\bin\Debug\MahApps.Metro.pdb
+C:\HK1-2021-2022\Nhp mon cong nghe phan mem\QuanLyTiecCuoi-master\bin\Debug\MahApps.Metro.xml
+C:\HK1-2021-2022\Nhp mon cong nghe phan mem\QuanLyTiecCuoi-master\bin\Debug\MaterialDesignColors.pdb
+C:\HK1-2021-2022\Nhp mon cong nghe phan mem\QuanLyTiecCuoi-master\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\HK1-2021-2022\Nhp mon cong nghe phan mem\QuanLyTiecCuoi-master\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\HK1-2021-2022\Nhp mon cong nghe phan mem\QuanLyTiecCuoi-master\bin\Debug\Microsoft.Expression.Interactions.xml
+C:\HK1-2021-2022\Nhp mon cong nghe phan mem\QuanLyTiecCuoi-master\bin\Debug\Microsoft.Xaml.Behaviors.pdb
+C:\HK1-2021-2022\Nhp mon cong nghe phan mem\QuanLyTiecCuoi-master\bin\Debug\Microsoft.Xaml.Behaviors.xml
+C:\HK1-2021-2022\Nhp mon cong nghe phan mem\QuanLyTiecCuoi-master\bin\Debug\System.Windows.Interactivity.xml
+C:\HK1-2021-2022\Nhp mon cong nghe phan mem\QuanLyTiecCuoi-master\obj\Debug\QuanLyTiecCuoi.csproj.AssemblyReference.cache
+C:\HK1-2021-2022\Nhp mon cong nghe phan mem\QuanLyTiecCuoi-master\obj\Debug\UserControls\usc_Tiec.baml
+C:\HK1-2021-2022\Nhp mon cong nghe phan mem\QuanLyTiecCuoi-master\obj\Debug\CT_PhieuDatBanWindow.g.cs
+C:\HK1-2021-2022\Nhp mon cong nghe phan mem\QuanLyTiecCuoi-master\obj\Debug\CT_PhieuDatBanxaml.g.cs
+C:\HK1-2021-2022\Nhp mon cong nghe phan mem\QuanLyTiecCuoi-master\obj\Debug\DSTiecChuaThanhToan.g.cs
+C:\HK1-2021-2022\Nhp mon cong nghe phan mem\QuanLyTiecCuoi-master\obj\Debug\HoaDon.g.cs
+C:\HK1-2021-2022\Nhp mon cong nghe phan mem\QuanLyTiecCuoi-master\obj\Debug\InHoaDon.g.cs
+C:\HK1-2021-2022\Nhp mon cong nghe phan mem\QuanLyTiecCuoi-master\obj\Debug\Login.g.cs
+C:\HK1-2021-2022\Nhp mon cong nghe phan mem\QuanLyTiecCuoi-master\obj\Debug\MainWindow.g.cs
+C:\HK1-2021-2022\Nhp mon cong nghe phan mem\QuanLyTiecCuoi-master\obj\Debug\DatBanvaDichVuWindow.g.cs
+C:\HK1-2021-2022\Nhp mon cong nghe phan mem\QuanLyTiecCuoi-master\obj\Debug\UserControls\usc_Dichvu.g.cs
+C:\HK1-2021-2022\Nhp mon cong nghe phan mem\QuanLyTiecCuoi-master\obj\Debug\UserControls\usc_Doanhthu.g.cs
+C:\HK1-2021-2022\Nhp mon cong nghe phan mem\QuanLyTiecCuoi-master\obj\Debug\UserControls\usc_Hoadon.g.cs
+C:\HK1-2021-2022\Nhp mon cong nghe phan mem\QuanLyTiecCuoi-master\obj\Debug\UserControls\usc_Monan.g.cs
+C:\HK1-2021-2022\Nhp mon cong nghe phan mem\QuanLyTiecCuoi-master\obj\Debug\UserControls\usc_Phanquyen.g.cs
+C:\HK1-2021-2022\Nhp mon cong nghe phan mem\QuanLyTiecCuoi-master\obj\Debug\UserControls\usc_Quidinh.g.cs
+C:\HK1-2021-2022\Nhp mon cong nghe phan mem\QuanLyTiecCuoi-master\obj\Debug\UserControls\usc_Sanh.g.cs
+C:\HK1-2021-2022\Nhp mon cong nghe phan mem\QuanLyTiecCuoi-master\obj\Debug\UserControls\usc_Tiec.g.cs
+C:\HK1-2021-2022\Nhp mon cong nghe phan mem\QuanLyTiecCuoi-master\obj\Debug\App.g.cs
+C:\HK1-2021-2022\Nhp mon cong nghe phan mem\QuanLyTiecCuoi-master\obj\Debug\QuanLyTiecCuoi_Content.g.cs
+C:\HK1-2021-2022\Nhp mon cong nghe phan mem\QuanLyTiecCuoi-master\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\HK1-2021-2022\Nhp mon cong nghe phan mem\QuanLyTiecCuoi-master\obj\Debug\QuanLyTiecCuoi_MarkupCompile.cache
+C:\HK1-2021-2022\Nhp mon cong nghe phan mem\QuanLyTiecCuoi-master\obj\Debug\QuanLyTiecCuoi_MarkupCompile.lref
+C:\HK1-2021-2022\Nhp mon cong nghe phan mem\QuanLyTiecCuoi-master\obj\Debug\App.baml
+C:\HK1-2021-2022\Nhp mon cong nghe phan mem\QuanLyTiecCuoi-master\obj\Debug\CT_PhieuDatBanWindow.baml
+C:\HK1-2021-2022\Nhp mon cong nghe phan mem\QuanLyTiecCuoi-master\obj\Debug\CT_PhieuDatBanxaml.baml
+C:\HK1-2021-2022\Nhp mon cong nghe phan mem\QuanLyTiecCuoi-master\obj\Debug\DSTiecChuaThanhToan.baml
+C:\HK1-2021-2022\Nhp mon cong nghe phan mem\QuanLyTiecCuoi-master\obj\Debug\HoaDon.baml
+C:\HK1-2021-2022\Nhp mon cong nghe phan mem\QuanLyTiecCuoi-master\obj\Debug\InHoaDon.baml
+C:\HK1-2021-2022\Nhp mon cong nghe phan mem\QuanLyTiecCuoi-master\obj\Debug\Login.baml
+C:\HK1-2021-2022\Nhp mon cong nghe phan mem\QuanLyTiecCuoi-master\obj\Debug\MainWindow.baml
+C:\HK1-2021-2022\Nhp mon cong nghe phan mem\QuanLyTiecCuoi-master\obj\Debug\DatBanvaDichVuWindow.baml
+C:\HK1-2021-2022\Nhp mon cong nghe phan mem\QuanLyTiecCuoi-master\obj\Debug\UserControls\usc_Dichvu.baml
+C:\HK1-2021-2022\Nhp mon cong nghe phan mem\QuanLyTiecCuoi-master\obj\Debug\UserControls\usc_Doanhthu.baml
+C:\HK1-2021-2022\Nhp mon cong nghe phan mem\QuanLyTiecCuoi-master\obj\Debug\UserControls\usc_Hoadon.baml
+C:\HK1-2021-2022\Nhp mon cong nghe phan mem\QuanLyTiecCuoi-master\obj\Debug\UserControls\usc_Monan.baml
+C:\HK1-2021-2022\Nhp mon cong nghe phan mem\QuanLyTiecCuoi-master\obj\Debug\UserControls\usc_Phanquyen.baml
+C:\HK1-2021-2022\Nhp mon cong nghe phan mem\QuanLyTiecCuoi-master\obj\Debug\UserControls\usc_Quidinh.baml
+C:\HK1-2021-2022\Nhp mon cong nghe phan mem\QuanLyTiecCuoi-master\obj\Debug\UserControls\usc_Sanh.baml
+C:\HK1-2021-2022\Nhp mon cong nghe phan mem\QuanLyTiecCuoi-master\obj\Debug\QuanLyTiecCuoi.g.resources
+C:\HK1-2021-2022\Nhp mon cong nghe phan mem\QuanLyTiecCuoi-master\obj\Debug\QuanLyTiecCuoi.Properties.Resources.resources
+C:\HK1-2021-2022\Nhp mon cong nghe phan mem\QuanLyTiecCuoi-master\obj\Debug\QuanLyTiecCuoi.csproj.GenerateResource.cache
+C:\HK1-2021-2022\Nhp mon cong nghe phan mem\QuanLyTiecCuoi-master\obj\Debug\QuanLyTiecCuoi.csproj.CoreCompileInputs.cache
+C:\HK1-2021-2022\Nhp mon cong nghe phan mem\QuanLyTiecCuoi-master\obj\Debug\QuanLyTiecCuoi.exe
+C:\HK1-2021-2022\Nhp mon cong nghe phan mem\QuanLyTiecCuoi-master\obj\Debug\QuanLyTiecCuoi.pdb
+C:\Users\Admin\Desktop\QuanLyTiecCuoi\bin\Debug\DatBanvaDichVuWindow.xaml.cs
+C:\Users\Admin\Desktop\QuanLyTiecCuoi\bin\Debug\QuanLyTiecCuoi.exe.config
+C:\Users\Admin\Desktop\QuanLyTiecCuoi\bin\Debug\QuanLyTiecCuoi.exe
+C:\Users\Admin\Desktop\QuanLyTiecCuoi\bin\Debug\QuanLyTiecCuoi.pdb
+C:\Users\Admin\Desktop\QuanLyTiecCuoi\bin\Debug\ControlzEx.dll
+C:\Users\Admin\Desktop\QuanLyTiecCuoi\bin\Debug\EntityFramework.dll
+C:\Users\Admin\Desktop\QuanLyTiecCuoi\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Admin\Desktop\QuanLyTiecCuoi\bin\Debug\MahApps.Metro.dll
+C:\Users\Admin\Desktop\QuanLyTiecCuoi\bin\Debug\MaterialDesignColors.dll
+C:\Users\Admin\Desktop\QuanLyTiecCuoi\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\Admin\Desktop\QuanLyTiecCuoi\bin\Debug\Microsoft.Expression.Interactions.dll
+C:\Users\Admin\Desktop\QuanLyTiecCuoi\bin\Debug\Microsoft.Xaml.Behaviors.dll
+C:\Users\Admin\Desktop\QuanLyTiecCuoi\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\Admin\Desktop\QuanLyTiecCuoi\bin\Debug\ControlzEx.pdb
+C:\Users\Admin\Desktop\QuanLyTiecCuoi\bin\Debug\ControlzEx.xml
+C:\Users\Admin\Desktop\QuanLyTiecCuoi\bin\Debug\EntityFramework.xml
+C:\Users\Admin\Desktop\QuanLyTiecCuoi\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Admin\Desktop\QuanLyTiecCuoi\bin\Debug\MahApps.Metro.pdb
+C:\Users\Admin\Desktop\QuanLyTiecCuoi\bin\Debug\MahApps.Metro.xml
+C:\Users\Admin\Desktop\QuanLyTiecCuoi\bin\Debug\MaterialDesignColors.pdb
+C:\Users\Admin\Desktop\QuanLyTiecCuoi\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\Admin\Desktop\QuanLyTiecCuoi\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\Admin\Desktop\QuanLyTiecCuoi\bin\Debug\Microsoft.Expression.Interactions.xml
+C:\Users\Admin\Desktop\QuanLyTiecCuoi\bin\Debug\Microsoft.Xaml.Behaviors.pdb
+C:\Users\Admin\Desktop\QuanLyTiecCuoi\bin\Debug\Microsoft.Xaml.Behaviors.xml
+C:\Users\Admin\Desktop\QuanLyTiecCuoi\bin\Debug\System.Windows.Interactivity.xml
+C:\Users\Admin\Desktop\QuanLyTiecCuoi\obj\Debug\QuanLyTiecCuoi.csprojAssemblyReference.cache
+C:\Users\Admin\Desktop\QuanLyTiecCuoi\obj\Debug\UserControls\usc_Tiec.baml
+C:\Users\Admin\Desktop\QuanLyTiecCuoi\obj\Debug\CT_PhieuDatBanWindow.g.cs
+C:\Users\Admin\Desktop\QuanLyTiecCuoi\obj\Debug\CT_PhieuDatBanxaml.g.cs
+C:\Users\Admin\Desktop\QuanLyTiecCuoi\obj\Debug\DSTiecChuaThanhToan.g.cs
+C:\Users\Admin\Desktop\QuanLyTiecCuoi\obj\Debug\HoaDon.g.cs
+C:\Users\Admin\Desktop\QuanLyTiecCuoi\obj\Debug\InHoaDon.g.cs
+C:\Users\Admin\Desktop\QuanLyTiecCuoi\obj\Debug\Login.g.cs
+C:\Users\Admin\Desktop\QuanLyTiecCuoi\obj\Debug\MainWindow.g.cs
+C:\Users\Admin\Desktop\QuanLyTiecCuoi\obj\Debug\DatBanvaDichVuWindow.g.cs
+C:\Users\Admin\Desktop\QuanLyTiecCuoi\obj\Debug\UserControls\usc_Dichvu.g.cs
+C:\Users\Admin\Desktop\QuanLyTiecCuoi\obj\Debug\UserControls\usc_Doanhthu.g.cs
+C:\Users\Admin\Desktop\QuanLyTiecCuoi\obj\Debug\UserControls\usc_Hoadon.g.cs
+C:\Users\Admin\Desktop\QuanLyTiecCuoi\obj\Debug\UserControls\usc_Monan.g.cs
+C:\Users\Admin\Desktop\QuanLyTiecCuoi\obj\Debug\UserControls\usc_Phanquyen.g.cs
+C:\Users\Admin\Desktop\QuanLyTiecCuoi\obj\Debug\UserControls\usc_Quidinh.g.cs
+C:\Users\Admin\Desktop\QuanLyTiecCuoi\obj\Debug\UserControls\usc_Sanh.g.cs
+C:\Users\Admin\Desktop\QuanLyTiecCuoi\obj\Debug\UserControls\usc_Tiec.g.cs
+C:\Users\Admin\Desktop\QuanLyTiecCuoi\obj\Debug\App.g.cs
+C:\Users\Admin\Desktop\QuanLyTiecCuoi\obj\Debug\QuanLyTiecCuoi_Content.g.cs
+C:\Users\Admin\Desktop\QuanLyTiecCuoi\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Admin\Desktop\QuanLyTiecCuoi\obj\Debug\QuanLyTiecCuoi_MarkupCompile.cache
+C:\Users\Admin\Desktop\QuanLyTiecCuoi\obj\Debug\QuanLyTiecCuoi_MarkupCompile.lref
+C:\Users\Admin\Desktop\QuanLyTiecCuoi\obj\Debug\App.baml
+C:\Users\Admin\Desktop\QuanLyTiecCuoi\obj\Debug\CT_PhieuDatBanWindow.baml
+C:\Users\Admin\Desktop\QuanLyTiecCuoi\obj\Debug\CT_PhieuDatBanxaml.baml
+C:\Users\Admin\Desktop\QuanLyTiecCuoi\obj\Debug\DSTiecChuaThanhToan.baml
+C:\Users\Admin\Desktop\QuanLyTiecCuoi\obj\Debug\HoaDon.baml
+C:\Users\Admin\Desktop\QuanLyTiecCuoi\obj\Debug\InHoaDon.baml
+C:\Users\Admin\Desktop\QuanLyTiecCuoi\obj\Debug\Login.baml
+C:\Users\Admin\Desktop\QuanLyTiecCuoi\obj\Debug\MainWindow.baml
+C:\Users\Admin\Desktop\QuanLyTiecCuoi\obj\Debug\DatBanvaDichVuWindow.baml
+C:\Users\Admin\Desktop\QuanLyTiecCuoi\obj\Debug\UserControls\usc_Dichvu.baml
+C:\Users\Admin\Desktop\QuanLyTiecCuoi\obj\Debug\UserControls\usc_Doanhthu.baml
+C:\Users\Admin\Desktop\QuanLyTiecCuoi\obj\Debug\UserControls\usc_Hoadon.baml
+C:\Users\Admin\Desktop\QuanLyTiecCuoi\obj\Debug\UserControls\usc_Monan.baml
+C:\Users\Admin\Desktop\QuanLyTiecCuoi\obj\Debug\UserControls\usc_Phanquyen.baml
+C:\Users\Admin\Desktop\QuanLyTiecCuoi\obj\Debug\UserControls\usc_Quidinh.baml
+C:\Users\Admin\Desktop\QuanLyTiecCuoi\obj\Debug\UserControls\usc_Sanh.baml
+C:\Users\Admin\Desktop\QuanLyTiecCuoi\obj\Debug\QuanLyTiecCuoi.g.resources
+C:\Users\Admin\Desktop\QuanLyTiecCuoi\obj\Debug\QuanLyTiecCuoi.Properties.Resources.resources
+C:\Users\Admin\Desktop\QuanLyTiecCuoi\obj\Debug\QuanLyTiecCuoi.csproj.GenerateResource.cache
+C:\Users\Admin\Desktop\QuanLyTiecCuoi\obj\Debug\QuanLyTiecCuoi.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\QuanLyTiecCuoi\obj\Debug\QuanLyTiecCuoi.csproj.CopyComplete
+C:\Users\Admin\Desktop\QuanLyTiecCuoi\obj\Debug\QuanLyTiecCuoi.exe
+C:\Users\Admin\Desktop\QuanLyTiecCuoi\obj\Debug\QuanLyTiecCuoi.pdb
+C:\Users\Admin\Desktop\QuanLyTiecCuoi - Copy\bin\Debug\DatBanvaDichVuWindow.xaml.cs
+C:\Users\Admin\Desktop\QuanLyTiecCuoi - Copy\bin\Debug\QuanLyTiecCuoi.exe.config
+C:\Users\Admin\Desktop\QuanLyTiecCuoi - Copy\bin\Debug\QuanLyTiecCuoi.exe
+C:\Users\Admin\Desktop\QuanLyTiecCuoi - Copy\bin\Debug\QuanLyTiecCuoi.pdb
+C:\Users\Admin\Desktop\QuanLyTiecCuoi - Copy\bin\Debug\ControlzEx.dll
+C:\Users\Admin\Desktop\QuanLyTiecCuoi - Copy\bin\Debug\EntityFramework.dll
+C:\Users\Admin\Desktop\QuanLyTiecCuoi - Copy\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Admin\Desktop\QuanLyTiecCuoi - Copy\bin\Debug\MahApps.Metro.dll
+C:\Users\Admin\Desktop\QuanLyTiecCuoi - Copy\bin\Debug\MaterialDesignColors.dll
+C:\Users\Admin\Desktop\QuanLyTiecCuoi - Copy\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\Admin\Desktop\QuanLyTiecCuoi - Copy\bin\Debug\Microsoft.Expression.Interactions.dll
+C:\Users\Admin\Desktop\QuanLyTiecCuoi - Copy\bin\Debug\Microsoft.Xaml.Behaviors.dll
+C:\Users\Admin\Desktop\QuanLyTiecCuoi - Copy\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\Admin\Desktop\QuanLyTiecCuoi - Copy\bin\Debug\ControlzEx.pdb
+C:\Users\Admin\Desktop\QuanLyTiecCuoi - Copy\bin\Debug\ControlzEx.xml
+C:\Users\Admin\Desktop\QuanLyTiecCuoi - Copy\bin\Debug\EntityFramework.xml
+C:\Users\Admin\Desktop\QuanLyTiecCuoi - Copy\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Admin\Desktop\QuanLyTiecCuoi - Copy\bin\Debug\MahApps.Metro.pdb
+C:\Users\Admin\Desktop\QuanLyTiecCuoi - Copy\bin\Debug\MahApps.Metro.xml
+C:\Users\Admin\Desktop\QuanLyTiecCuoi - Copy\bin\Debug\MaterialDesignColors.pdb
+C:\Users\Admin\Desktop\QuanLyTiecCuoi - Copy\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\Admin\Desktop\QuanLyTiecCuoi - Copy\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\Admin\Desktop\QuanLyTiecCuoi - Copy\bin\Debug\Microsoft.Expression.Interactions.xml
+C:\Users\Admin\Desktop\QuanLyTiecCuoi - Copy\bin\Debug\Microsoft.Xaml.Behaviors.pdb
+C:\Users\Admin\Desktop\QuanLyTiecCuoi - Copy\bin\Debug\Microsoft.Xaml.Behaviors.xml
+C:\Users\Admin\Desktop\QuanLyTiecCuoi - Copy\bin\Debug\System.Windows.Interactivity.xml
+C:\Users\Admin\Desktop\QuanLyTiecCuoi - Copy\obj\Debug\QuanLyTiecCuoi.csprojAssemblyReference.cache
+C:\Users\Admin\Desktop\QuanLyTiecCuoi - Copy\obj\Debug\UserControls\usc_Tiec.baml
+C:\Users\Admin\Desktop\QuanLyTiecCuoi - Copy\obj\Debug\CT_PhieuDatBanWindow.g.cs
+C:\Users\Admin\Desktop\QuanLyTiecCuoi - Copy\obj\Debug\CT_PhieuDatBanxaml.g.cs
+C:\Users\Admin\Desktop\QuanLyTiecCuoi - Copy\obj\Debug\DSTiecChuaThanhToan.g.cs
+C:\Users\Admin\Desktop\QuanLyTiecCuoi - Copy\obj\Debug\HoaDon.g.cs
+C:\Users\Admin\Desktop\QuanLyTiecCuoi - Copy\obj\Debug\InHoaDon.g.cs
+C:\Users\Admin\Desktop\QuanLyTiecCuoi - Copy\obj\Debug\Login.g.cs
+C:\Users\Admin\Desktop\QuanLyTiecCuoi - Copy\obj\Debug\MainWindow.g.cs
+C:\Users\Admin\Desktop\QuanLyTiecCuoi - Copy\obj\Debug\DatBanvaDichVuWindow.g.cs
+C:\Users\Admin\Desktop\QuanLyTiecCuoi - Copy\obj\Debug\UserControls\usc_Dichvu.g.cs
+C:\Users\Admin\Desktop\QuanLyTiecCuoi - Copy\obj\Debug\UserControls\usc_Doanhthu.g.cs
+C:\Users\Admin\Desktop\QuanLyTiecCuoi - Copy\obj\Debug\UserControls\usc_Hoadon.g.cs
+C:\Users\Admin\Desktop\QuanLyTiecCuoi - Copy\obj\Debug\UserControls\usc_Monan.g.cs
+C:\Users\Admin\Desktop\QuanLyTiecCuoi - Copy\obj\Debug\UserControls\usc_Phanquyen.g.cs
+C:\Users\Admin\Desktop\QuanLyTiecCuoi - Copy\obj\Debug\UserControls\usc_Quidinh.g.cs
+C:\Users\Admin\Desktop\QuanLyTiecCuoi - Copy\obj\Debug\UserControls\usc_Sanh.g.cs
+C:\Users\Admin\Desktop\QuanLyTiecCuoi - Copy\obj\Debug\UserControls\usc_Tiec.g.cs
+C:\Users\Admin\Desktop\QuanLyTiecCuoi - Copy\obj\Debug\App.g.cs
+C:\Users\Admin\Desktop\QuanLyTiecCuoi - Copy\obj\Debug\QuanLyTiecCuoi_Content.g.cs
+C:\Users\Admin\Desktop\QuanLyTiecCuoi - Copy\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Admin\Desktop\QuanLyTiecCuoi - Copy\obj\Debug\QuanLyTiecCuoi_MarkupCompile.cache
+C:\Users\Admin\Desktop\QuanLyTiecCuoi - Copy\obj\Debug\QuanLyTiecCuoi_MarkupCompile.lref
+C:\Users\Admin\Desktop\QuanLyTiecCuoi - Copy\obj\Debug\App.baml
+C:\Users\Admin\Desktop\QuanLyTiecCuoi - Copy\obj\Debug\CT_PhieuDatBanWindow.baml
+C:\Users\Admin\Desktop\QuanLyTiecCuoi - Copy\obj\Debug\CT_PhieuDatBanxaml.baml
+C:\Users\Admin\Desktop\QuanLyTiecCuoi - Copy\obj\Debug\DSTiecChuaThanhToan.baml
+C:\Users\Admin\Desktop\QuanLyTiecCuoi - Copy\obj\Debug\HoaDon.baml
+C:\Users\Admin\Desktop\QuanLyTiecCuoi - Copy\obj\Debug\InHoaDon.baml
+C:\Users\Admin\Desktop\QuanLyTiecCuoi - Copy\obj\Debug\Login.baml
+C:\Users\Admin\Desktop\QuanLyTiecCuoi - Copy\obj\Debug\MainWindow.baml
+C:\Users\Admin\Desktop\QuanLyTiecCuoi - Copy\obj\Debug\DatBanvaDichVuWindow.baml
+C:\Users\Admin\Desktop\QuanLyTiecCuoi - Copy\obj\Debug\UserControls\usc_Dichvu.baml
+C:\Users\Admin\Desktop\QuanLyTiecCuoi - Copy\obj\Debug\UserControls\usc_Doanhthu.baml
+C:\Users\Admin\Desktop\QuanLyTiecCuoi - Copy\obj\Debug\UserControls\usc_Hoadon.baml
+C:\Users\Admin\Desktop\QuanLyTiecCuoi - Copy\obj\Debug\UserControls\usc_Monan.baml
+C:\Users\Admin\Desktop\QuanLyTiecCuoi - Copy\obj\Debug\UserControls\usc_Phanquyen.baml
+C:\Users\Admin\Desktop\QuanLyTiecCuoi - Copy\obj\Debug\UserControls\usc_Quidinh.baml
+C:\Users\Admin\Desktop\QuanLyTiecCuoi - Copy\obj\Debug\UserControls\usc_Sanh.baml
+C:\Users\Admin\Desktop\QuanLyTiecCuoi - Copy\obj\Debug\QuanLyTiecCuoi.g.resources
+C:\Users\Admin\Desktop\QuanLyTiecCuoi - Copy\obj\Debug\QuanLyTiecCuoi.Properties.Resources.resources
+C:\Users\Admin\Desktop\QuanLyTiecCuoi - Copy\obj\Debug\QuanLyTiecCuoi.csproj.GenerateResource.cache
+C:\Users\Admin\Desktop\QuanLyTiecCuoi - Copy\obj\Debug\QuanLyTiecCuoi.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\QuanLyTiecCuoi - Copy\obj\Debug\QuanLyTiecCuoi.csproj.CopyComplete
+C:\Users\Admin\Desktop\QuanLyTiecCuoi - Copy\obj\Debug\QuanLyTiecCuoi.exe
+C:\Users\Admin\Desktop\QuanLyTiecCuoi - Copy\obj\Debug\QuanLyTiecCuoi.pdb
+D:\CNPM\New folder (2)\QuanLyTiecCuoi\bin\Debug\DatBanvaDichVuWindow.xaml.cs
+D:\CNPM\New folder (2)\QuanLyTiecCuoi\bin\Debug\QuanLyTiecCuoi.exe.config
+D:\CNPM\New folder (2)\QuanLyTiecCuoi\bin\Debug\QuanLyTiecCuoi.exe
+D:\CNPM\New folder (2)\QuanLyTiecCuoi\bin\Debug\QuanLyTiecCuoi.pdb
+D:\CNPM\New folder (2)\QuanLyTiecCuoi\bin\Debug\ControlzEx.dll
+D:\CNPM\New folder (2)\QuanLyTiecCuoi\bin\Debug\EntityFramework.dll
+D:\CNPM\New folder (2)\QuanLyTiecCuoi\bin\Debug\EntityFramework.SqlServer.dll
+D:\CNPM\New folder (2)\QuanLyTiecCuoi\bin\Debug\MahApps.Metro.dll
+D:\CNPM\New folder (2)\QuanLyTiecCuoi\bin\Debug\MaterialDesignColors.dll
+D:\CNPM\New folder (2)\QuanLyTiecCuoi\bin\Debug\MaterialDesignThemes.Wpf.dll
+D:\CNPM\New folder (2)\QuanLyTiecCuoi\bin\Debug\Microsoft.Expression.Interactions.dll
+D:\CNPM\New folder (2)\QuanLyTiecCuoi\bin\Debug\Microsoft.Xaml.Behaviors.dll
+D:\CNPM\New folder (2)\QuanLyTiecCuoi\bin\Debug\System.Windows.Interactivity.dll
+D:\CNPM\New folder (2)\QuanLyTiecCuoi\bin\Debug\ControlzEx.pdb
+D:\CNPM\New folder (2)\QuanLyTiecCuoi\bin\Debug\ControlzEx.xml
+D:\CNPM\New folder (2)\QuanLyTiecCuoi\bin\Debug\EntityFramework.xml
+D:\CNPM\New folder (2)\QuanLyTiecCuoi\bin\Debug\EntityFramework.SqlServer.xml
+D:\CNPM\New folder (2)\QuanLyTiecCuoi\bin\Debug\MahApps.Metro.pdb
+D:\CNPM\New folder (2)\QuanLyTiecCuoi\bin\Debug\MahApps.Metro.xml
+D:\CNPM\New folder (2)\QuanLyTiecCuoi\bin\Debug\MaterialDesignColors.pdb
+D:\CNPM\New folder (2)\QuanLyTiecCuoi\bin\Debug\MaterialDesignThemes.Wpf.pdb
+D:\CNPM\New folder (2)\QuanLyTiecCuoi\bin\Debug\MaterialDesignThemes.Wpf.xml
+D:\CNPM\New folder (2)\QuanLyTiecCuoi\bin\Debug\Microsoft.Expression.Interactions.xml
+D:\CNPM\New folder (2)\QuanLyTiecCuoi\bin\Debug\Microsoft.Xaml.Behaviors.pdb
+D:\CNPM\New folder (2)\QuanLyTiecCuoi\bin\Debug\Microsoft.Xaml.Behaviors.xml
+D:\CNPM\New folder (2)\QuanLyTiecCuoi\bin\Debug\System.Windows.Interactivity.xml
+D:\CNPM\New folder (2)\QuanLyTiecCuoi\obj\Debug\QuanLyTiecCuoi.csprojAssemblyReference.cache
+D:\CNPM\New folder (2)\QuanLyTiecCuoi\obj\Debug\UserControls\usc_Tiec.baml
+D:\CNPM\New folder (2)\QuanLyTiecCuoi\obj\Debug\CT_PhieuDatBanWindow.g.cs
+D:\CNPM\New folder (2)\QuanLyTiecCuoi\obj\Debug\CT_PhieuDatBanxaml.g.cs
+D:\CNPM\New folder (2)\QuanLyTiecCuoi\obj\Debug\DSTiecChuaThanhToan.g.cs
+D:\CNPM\New folder (2)\QuanLyTiecCuoi\obj\Debug\HoaDon.g.cs
+D:\CNPM\New folder (2)\QuanLyTiecCuoi\obj\Debug\InHoaDon.g.cs
+D:\CNPM\New folder (2)\QuanLyTiecCuoi\obj\Debug\Login.g.cs
+D:\CNPM\New folder (2)\QuanLyTiecCuoi\obj\Debug\MainWindow.g.cs
+D:\CNPM\New folder (2)\QuanLyTiecCuoi\obj\Debug\DatBanvaDichVuWindow.g.cs
+D:\CNPM\New folder (2)\QuanLyTiecCuoi\obj\Debug\UserControls\usc_Dichvu.g.cs
+D:\CNPM\New folder (2)\QuanLyTiecCuoi\obj\Debug\UserControls\usc_Doanhthu.g.cs
+D:\CNPM\New folder (2)\QuanLyTiecCuoi\obj\Debug\UserControls\usc_Hoadon.g.cs
+D:\CNPM\New folder (2)\QuanLyTiecCuoi\obj\Debug\UserControls\usc_Monan.g.cs
+D:\CNPM\New folder (2)\QuanLyTiecCuoi\obj\Debug\UserControls\usc_Phanquyen.g.cs
+D:\CNPM\New folder (2)\QuanLyTiecCuoi\obj\Debug\UserControls\usc_Quidinh.g.cs
+D:\CNPM\New folder (2)\QuanLyTiecCuoi\obj\Debug\UserControls\usc_Sanh.g.cs
+D:\CNPM\New folder (2)\QuanLyTiecCuoi\obj\Debug\UserControls\usc_Tiec.g.cs
+D:\CNPM\New folder (2)\QuanLyTiecCuoi\obj\Debug\App.g.cs
+D:\CNPM\New folder (2)\QuanLyTiecCuoi\obj\Debug\QuanLyTiecCuoi_Content.g.cs
+D:\CNPM\New folder (2)\QuanLyTiecCuoi\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\CNPM\New folder (2)\QuanLyTiecCuoi\obj\Debug\QuanLyTiecCuoi_MarkupCompile.cache
+D:\CNPM\New folder (2)\QuanLyTiecCuoi\obj\Debug\QuanLyTiecCuoi_MarkupCompile.lref
+D:\CNPM\New folder (2)\QuanLyTiecCuoi\obj\Debug\App.baml
+D:\CNPM\New folder (2)\QuanLyTiecCuoi\obj\Debug\CT_PhieuDatBanWindow.baml
+D:\CNPM\New folder (2)\QuanLyTiecCuoi\obj\Debug\CT_PhieuDatBanxaml.baml
+D:\CNPM\New folder (2)\QuanLyTiecCuoi\obj\Debug\DSTiecChuaThanhToan.baml
+D:\CNPM\New folder (2)\QuanLyTiecCuoi\obj\Debug\HoaDon.baml
+D:\CNPM\New folder (2)\QuanLyTiecCuoi\obj\Debug\InHoaDon.baml
+D:\CNPM\New folder (2)\QuanLyTiecCuoi\obj\Debug\Login.baml
+D:\CNPM\New folder (2)\QuanLyTiecCuoi\obj\Debug\MainWindow.baml
+D:\CNPM\New folder (2)\QuanLyTiecCuoi\obj\Debug\DatBanvaDichVuWindow.baml
+D:\CNPM\New folder (2)\QuanLyTiecCuoi\obj\Debug\UserControls\usc_Dichvu.baml
+D:\CNPM\New folder (2)\QuanLyTiecCuoi\obj\Debug\UserControls\usc_Doanhthu.baml
+D:\CNPM\New folder (2)\QuanLyTiecCuoi\obj\Debug\UserControls\usc_Hoadon.baml
+D:\CNPM\New folder (2)\QuanLyTiecCuoi\obj\Debug\UserControls\usc_Monan.baml
+D:\CNPM\New folder (2)\QuanLyTiecCuoi\obj\Debug\UserControls\usc_Phanquyen.baml
+D:\CNPM\New folder (2)\QuanLyTiecCuoi\obj\Debug\UserControls\usc_Quidinh.baml
+D:\CNPM\New folder (2)\QuanLyTiecCuoi\obj\Debug\UserControls\usc_Sanh.baml
+D:\CNPM\New folder (2)\QuanLyTiecCuoi\obj\Debug\QuanLyTiecCuoi.g.resources
+D:\CNPM\New folder (2)\QuanLyTiecCuoi\obj\Debug\QuanLyTiecCuoi.Properties.Resources.resources
+D:\CNPM\New folder (2)\QuanLyTiecCuoi\obj\Debug\QuanLyTiecCuoi.csproj.GenerateResource.cache
+D:\CNPM\New folder (2)\QuanLyTiecCuoi\obj\Debug\QuanLyTiecCuoi.csproj.CoreCompileInputs.cache
+D:\CNPM\New folder (2)\QuanLyTiecCuoi\obj\Debug\QuanLyTiecCuoi.csproj.CopyComplete
+D:\CNPM\New folder (2)\QuanLyTiecCuoi\obj\Debug\QuanLyTiecCuoi.exe
+D:\CNPM\New folder (2)\QuanLyTiecCuoi\obj\Debug\QuanLyTiecCuoi.pdb

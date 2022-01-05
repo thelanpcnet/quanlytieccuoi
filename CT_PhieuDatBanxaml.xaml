@@ -1,0 +1,28 @@
+﻿<Window x:Class="QuanLyTiecCuoi.CT_PhieuDatBanxaml"
+
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:QuanLyTiecCuoi"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        Title="Chi Tiết Phiếu Đặt Bàn" Height="300" Width="400">
+    <Grid>
+        <DataGrid DataContext="{StaticResource HoaDonVM}" ItemsSource="{Binding ListCT_PhieuDatBan}"    
+                                    IsReadOnly="True" GridLinesVisibility="None" HorizontalGridLinesBrush="Black" VerticalGridLinesBrush="Black" Background="{x:Null}" 
+                                    FontSize="15"
+                                    FontFamily="Segoe UI" 
+                                    CanUserSortColumns="True" CanUserAddRows="False"                                    AutoGenerateColumns="False">
+            
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Tên món ăn" FontSize="14" Binding="{Binding MONAN.TenMonAn}">
+                </DataGridTextColumn>
+                <DataGridTextColumn Header="Số lượng" FontSize="14" Binding="{Binding SoLuong}">
+                </DataGridTextColumn>
+                <DataGridTextColumn Header="Thành tiền" Width="*" FontSize="14" Binding="{Binding ThanhTien}">
+                </DataGridTextColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Window>

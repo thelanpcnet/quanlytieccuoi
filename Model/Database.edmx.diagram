@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="0c8811e636db490395b54bbe92d074db" Name="Diagram1" ZoomLevel="105">
+        <EntityTypeShape EntityType="DatabaseModel.BAOCAONGAY" Width="1.5" PointX="12" PointY="11.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="DatabaseModel.BAOCAOTHANG" Width="1.5" PointX="9.75" PointY="11.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="DatabaseModel.CA" Width="1.5" PointX="3" PointY="3" IsExpanded="true" />
+        <EntityTypeShape EntityType="DatabaseModel.CHUCNANG" Width="1.5" PointX="0.75" PointY="14.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DatabaseModel.CT_PHIEUDATBAN" Width="1.5" PointX="9.75" PointY="7.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DatabaseModel.DICHVU" Width="1.5" PointX="8.25" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DatabaseModel.HOADON" Width="1.5" PointX="7.5" PointY="3.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DatabaseModel.LOAISANH" Width="1.5" PointX="0.75" PointY="6" IsExpanded="true" />
+        <EntityTypeShape EntityType="DatabaseModel.MONAN" Width="1.5" PointX="7.5" PointY="11.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="DatabaseModel.NGUOIDUNG" Width="1.5" PointX="3" PointY="11.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="DatabaseModel.NHOMNGUOIDUNG" Width="1.5" PointX="0.75" PointY="11.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DatabaseModel.PHANQUYEN" Width="1.5" PointX="3" PointY="14.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="DatabaseModel.PHIEUDATBAN" Width="1.5" PointX="7.5" PointY="7.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="DatabaseModel.PHIEUDATDICHVU" Width="1.5" PointX="10.5" PointY="3.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DatabaseModel.SANH" Width="1.5" PointX="3" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DatabaseModel.THAMSO" Width="1.5" PointX="0.75" PointY="8.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DatabaseModel.TIECCUOI" Width="1.5" PointX="5.25" PointY="5" IsExpanded="true" />
+        <AssociationConnector Association="DatabaseModel.FK__BAOCAONGA__MaBao__4222D4EF" ManuallyRouted="false" />
+        <AssociationConnector Association="DatabaseModel.FK__TIECCUOI__MaCa__4CA06362" ManuallyRouted="false" />
+        <AssociationConnector Association="DatabaseModel.FK__PHANQUYEN__MaChu__46E78A0C" ManuallyRouted="false" />
+        <AssociationConnector Association="DatabaseModel.FK__CT_PHIEUD__MaMon__4316F928" ManuallyRouted="false" />
+        <AssociationConnector Association="DatabaseModel.FK__CT_PHIEUD__MaPhi__440B1D61" ManuallyRouted="false" />
+        <AssociationConnector Association="DatabaseModel.FK__PHIEUDATD__MaDic__49C3F6B7" ManuallyRouted="false" />
+        <AssociationConnector Association="DatabaseModel.FK__HOADON__MaTiecCu__44FF419A" ManuallyRouted="false" />
+        <AssociationConnector Association="DatabaseModel.FK__SANH__MaLoaiSanh__4BAC3F29" ManuallyRouted="false" />
+        <AssociationConnector Association="DatabaseModel.FK__NGUOIDUNG__MaNho__45F365D3" ManuallyRouted="false" />
+        <AssociationConnector Association="DatabaseModel.FK__PHANQUYEN__MaNho__47DBAE45" ManuallyRouted="false" />
+        <AssociationConnector Association="DatabaseModel.FK__PHIEUDATB__MaTie__48CFD27E" ManuallyRouted="false" />
+        <AssociationConnector Association="DatabaseModel.FK__PHIEUDATD__MaTie__4AB81AF0" ManuallyRouted="false" />
+        <AssociationConnector Association="DatabaseModel.FK__TIECCUOI__MaSanh__4D94879B" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

@@ -1,0 +1,249 @@
+﻿<controls:MetroWindow 
+    x:Class="QuanLyTiecCuoi.CT_PhieuDatBanWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:local="clr-namespace:QuanLyTiecCuoi"
+    mc:Ignorable="d" WindowStartupLocation="CenterScreen"
+    xmlns:controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+    xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes" 
+    xmlns:i="http://schemas.microsoft.com/xaml/behaviors"
+    DataContext="{StaticResource CT_PhieuDatBanVM}" 
+    Name="CT_PhieuDatBanWd"
+    Title="Chi Tiết Phiếu Đặt Bàn" Height="662" Width="800">
+    <i:Interaction.Triggers>
+        <i:EventTrigger EventName="Loaded">
+            <i:InvokeCommandAction Command="{Binding LoadedCommand}"/>
+        </i:EventTrigger>
+    </i:Interaction.Triggers>
+    <Grid Background="White" Name="grd_CTPhieuDatBan">
+        <DockPanel LastChildFill="True" DataContext="{StaticResource CT_PhieuDatBanVM}" >
+            <TextBlock Text="Chi Tiết Phiếu Đặt Bàn" HorizontalAlignment="Center"
+                                   VerticalAlignment="Top" FontSize="32" Foreground="#FF292E47"
+                                   Margin="0,5,0,0" FontWeight="SemiBold"
+                                   DockPanel.Dock="Top"/>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <materialDesign:Card DockPanel.Dock="Top" Margin="10,10,10,5" Grid.Row="0" >
+                    <DockPanel>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition/>
+                                <ColumnDefinition Width="0.5*"/>
+                            </Grid.ColumnDefinitions>
+                            <DockPanel>
+                                <Grid DockPanel.Dock="Top">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="10*"/>
+                                        <ColumnDefinition Width="160*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <Image  Margin="0,5,0,0" Width="32" Height="32" Source="/QuanLyTiecCuoi;component/photos/search_32px.png"/>
+                                    <TextBox Grid.Column="1" x:Name="tb_TimKiem"
+                                    Text="{Binding FilterString, UpdateSourceTrigger=PropertyChanged}"
+                                    controls:TextBoxHelper.Watermark="Tìm kiếm Món Ăn"
+                                    BorderThickness="0,0,0,1"
+                                    BorderBrush="Black"
+                                    FontSize="15"
+                                    VerticalAlignment="Center" Margin="10,5" 
+                                    VerticalContentAlignment="Center" />
+                                </Grid>
+                                <GroupBox Header="Danh sách món ăn"  Margin="10,5,0,10">
+                                    <DataGrid Name="dtg_DanhSachMonAn" ItemsSource="{Binding ListMonAn}" SelectedItem="{Binding SelectedMA, Mode=OneWayToSource}" 
+                                                  AutoGenerateColumns="False" CanUserAddRows="False" controls:DataGridHelper.ColumnHeaderPadding="10,0" FontWeight="DemiBold">
+                                        <DataGrid.Columns>
+                                            <DataGridTemplateColumn Header="Ảnh">
+                                                <DataGridTemplateColumn.CellTemplate>
+                                                    <DataTemplate>
+                                                        <materialDesign:PopupBox HorizontalAlignment="Left" PlacementMode="BottomAndAlignCentres" StaysOpen="False" PopupMode="MouseOver">
+                                                            <materialDesign:PopupBox.ToggleContent>
+                                                                <materialDesign:PackIcon Kind="Image" Foreground="#FF0F5699"/>
+                                                            </materialDesign:PopupBox.ToggleContent>
+                                                            <Image Source="{Binding HinhAnh}" Width="300" Height="300" Stretch="Fill" />
+                                                        </materialDesign:PopupBox>
+                                                    </DataTemplate>
+                                                </DataGridTemplateColumn.CellTemplate>
+                                            </DataGridTemplateColumn>
+                                            <DataGridTextColumn Header="Tên Món Ăn" Binding="{Binding TenMonAn}" IsReadOnly="True"></DataGridTextColumn>
+                                            <DataGridTextColumn Header="Đơn giá" Binding="{Binding DonGia}" IsReadOnly="True"></DataGridTextColumn>
+                                            <DataGridTextColumn Header="Mô tả" Binding="{Binding MoTa}" IsReadOnly="True"></DataGridTextColumn>
+                                            <DataGridTextColumn Width="*" Header="Ghi chú" Binding="{Binding GhiChu}" IsReadOnly="True"></DataGridTextColumn>
+                                        </DataGrid.Columns>
+                                    </DataGrid>
+                                </GroupBox>
+                            </DockPanel>
+                            <Grid Grid.Column="1" DockPanel.Dock="Right">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="0.6*"/>
+                                    <ColumnDefinition/>
+                                </Grid.ColumnDefinitions>
+                                <Grid Margin="10,5,5,0">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="1.25*"/>
+                                        <RowDefinition/>
+                                        <RowDefinition/>
+                                        <RowDefinition/>
+                                        <RowDefinition/>
+                                        <RowDefinition/>
+                                        <RowDefinition Height="1.2*"/>
+                                    </Grid.RowDefinitions>
+                                    <Label Grid.Row="0" Margin="0,2" Content="Đơn giá bàn" FontWeight="SemiBold"/>
+                                    <Label Grid.Row="1" Margin="0,2" Content="Tên món ăn" FontWeight="SemiBold"/>
+                                    <Label Grid.Row="2" Margin="0,2" Content="Đơn giá" FontWeight="SemiBold"/>
+                                    <Label Grid.Row="3" Margin="0,2" Content="Số lượng" FontWeight="SemiBold"/>
+                                    <Label Grid.Row="4" Margin="0,2" Content="Thành tiền" FontWeight="SemiBold"/>
+                                    <Label Grid.Row="5" Margin="0,2" Content="Ghi chú" FontWeight="SemiBold"/>
+                                </Grid>
+                                <Grid Grid.Column="1" Margin="5,5,5,0">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="1.25*"/>
+                                        <RowDefinition/>
+                                        <RowDefinition/>
+                                        <RowDefinition/>
+                                        <RowDefinition/>
+                                        <RowDefinition/>
+                                        <RowDefinition Height="1.2*"/>
+                                    </Grid.RowDefinitions>
+                                    <TextBox ToolTip="Đơn giá bàn phải lớn hơn hoặc bằng Đơn giá bàn tối thiểu" FontWeight="DemiBold" Grid.Row="0" Margin="0,0" Height="30" VerticalAlignment="Top" BorderBrush="Black" BorderThickness="0" 
+                                             Text="{Binding DonGiaBan, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" Foreground="Red" FontSize="15" IsReadOnly="True"/>
+                                    <TextBox FontWeight="DemiBold" Grid.Row="1" Margin="0,4" BorderBrush="Black" BorderThickness="1" Text="{Binding SelectedMA.TenMonAn, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" IsReadOnly="True"/>
+                                    <TextBox FontWeight="DemiBold" Grid.Row="2" Margin="0,4" BorderBrush="Black" BorderThickness="1" Text="{Binding SelectedMA.DonGia, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" IsReadOnly="True"/>
+                                    <controls:NumericUpDown IsReadOnly="{Binding IsReadOnly}" FontWeight="DemiBold" Grid.Row="3" Name="nbr_MA_SoLuong" Margin="0,4" BorderBrush="Black" BorderThickness="1" Value="{Binding MA_SoLuong, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" TextAlignment="Left" Interval="1" NumericInputMode="Numbers"/>
+                                    <TextBox FontWeight="DemiBold" Grid.Row="4" Name="tbx_MA_ThanhTien" Margin="0,4" BorderBrush="Black" BorderThickness="1" Text="{Binding MA_ThanhTien, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" IsReadOnly="True"/>
+                                    <TextBox IsReadOnly="{Binding IsReadOnly}" FontWeight="DemiBold" Grid.Row="5" Name="tbx_MA_GhiChu" Margin="0,4" BorderBrush="Black" BorderThickness="1" Text="{Binding MA_GhiChu, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"/>
+                                    <Button Grid.Row="6"
+                                            IsEnabled="{Binding IsEnable}"
+                                            Style="{StaticResource MaterialDesignRaisedButton}"
+                                            Command="{Binding AddCommand}"
+                                            VerticalAlignment="Center"
+                                            ToolTip="Đặt dịch vụ cho tiệc cưới" Background="#FF2DB0AA" Foreground="White">
+                                        Đặt món ăn
+                                    </Button>
+                                </Grid>
+                            </Grid>
+                        </Grid>
+                    </DockPanel>
+                </materialDesign:Card>
+                <materialDesign:Card Margin="10,5,10,10" Grid.Row="1">
+                    <DockPanel LastChildFill="True">
+                        <!--<Grid DockPanel.Dock="Bottom">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition/>
+                                <ColumnDefinition/>
+                                <ColumnDefinition/>
+                            </Grid.ColumnDefinitions>
+                            <Button
+                                x:Name="btn_CTPDB_Them"
+                                Style="{StaticResource MaterialDesignRaisedButton}"
+                                Grid.Column="0" Margin="10"
+                                Click="btn_CTPDB_Them_Click"
+                                ToolTip="Thêm đặt bàn" Background="#FF0F5699" Foreground="White">
+                                Hiện Chức Năng Thêm
+                            </Button>
+                            <Button
+                                x:Name="btn_CTPDB_Xoa"
+                                Style="{StaticResource MaterialDesignRaisedButton}"
+                                Grid.Column="2" Margin="10"
+                                ToolTip="Xóa đặt bàn" Background="#FF0F5699" Foreground="White">
+                                Xóa Chi Tiết Đặt Bàn
+                            </Button>
+                            <Button
+                                x:Name="btn_CTPDB_Sua"
+                                Click="btn_CTPDB_Sua_Click"
+                                Style="{StaticResource MaterialDesignRaisedButton}"
+                                Grid.Column="1" Margin="10"
+                                ToolTip=" Sửa thông tin đặt dịch vụ" Background="#FF0F5699" Foreground="White">
+                                Hiện Chức Năng Sửa
+                            </Button>
+                        </Grid>-->
+                        <GroupBox DockPanel.Dock="Top" Header="Danh sách đặt món ăn" Margin="10,0,10,10" DataContext="{StaticResource CT_PhieuDatBanVM}" >
+                            <DataGrid IsReadOnly="{Binding IsReadOnly}" ItemsSource="{Binding ListCTPhieuDatBan}" SelectedItem="{Binding SelectedCTPDB, Mode=TwoWay}"  
+                                              AutoGenerateColumns="False" CanUserAddRows="False" controls:DataGridHelper.ColumnHeaderPadding="10,0" FontSize="12"
+                                              Name="dtg_DanhSachDatMonAn" FontWeight="DemiBold">
+                                <DataGrid.Columns>
+                                    <DataGridTemplateColumn Header="Sửa">
+                                        <DataGridTemplateColumn.CellTemplate>
+                                            <DataTemplate>
+                                                <materialDesign:PopupBox IsEnabled="{Binding IsEnable}" DataContext="{StaticResource CT_PhieuDatBanVM}" HorizontalAlignment="Left" PlacementMode="BottomAndAlignCentres" StaysOpen="True" PopupMode="Click"
+                                                                         ToolTip="Hiện bảng sửa chi tiết đặt bàn">
+                                                        <materialDesign:PopupBox.ToggleContent>
+                                                        <materialDesign:PackIcon Kind="Edit" Foreground="#FF0F5699"/>
+                                                    </materialDesign:PopupBox.ToggleContent>
+                                                    <StackPanel>
+                                                        <GroupBox Name="grb_ChiTietChinhSua" Header="Chi tiết chỉnh sửa" Margin="10" DataContext="{StaticResource CT_PhieuDatBanVM}">
+                                                            <Grid>
+                                                                <Grid.ColumnDefinitions>
+                                                                    <ColumnDefinition Width="0.35*"/>
+                                                                    <ColumnDefinition/>
+                                                                </Grid.ColumnDefinitions>
+                                                                <Grid.RowDefinitions>
+                                                                    <RowDefinition/>
+                                                                    <RowDefinition/>
+                                                                    <RowDefinition/>
+                                                                </Grid.RowDefinitions>
+                                                                <Label Grid.Column="0" Grid.Row="0" Margin="0" Content="Số lượng" FontWeight="SemiBold" VerticalAlignment="Center"/>
+                                                                <Label Grid.Column="0" Grid.Row="1" Margin="0" Content="Thành tiền" FontWeight="SemiBold" VerticalAlignment="Center"/>
+                                                                <Label Grid.Column="0" Grid.Row="2" Margin="0" Content="Ghi chú" FontWeight="SemiBold" VerticalAlignment="Center"/>
+                                                                <controls:NumericUpDown Grid.Column="1" Grid.Row="0" Margin="2" BorderBrush="Black" BorderThickness="1" TextAlignment="Left"
+                                                                            Value="{Binding CTPDB_SoLuong, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"/>
+                                                                <TextBox  Grid.Column="1" Grid.Row="1" Margin="2" BorderBrush="Black" BorderThickness="1" IsReadOnly="True"
+                                                                            Text="{Binding CTPDB_ThanhTien, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"/>
+                                                                <TextBox  Grid.Column="1" Grid.Row="2" Margin="2" BorderBrush="Black" BorderThickness="1"
+                                                                            Text="{Binding CTPDB_GhiChu, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"/>
+                                                            </Grid>
+                                                        </GroupBox>
+                                                        <Button
+                                                               Command="{Binding EditCommand}"
+                                                               Style="{StaticResource MaterialDesignRaisedButton}"
+                                                               Margin="10,2" Width="200"
+                                                               ToolTip="Lưu thông tin chi tiết đặt bàn" Background="#FF0F5699" Foreground="White">
+                                                            Lưu thay đổi
+                                                        </Button>
+                                                    </StackPanel>
+                                                </materialDesign:PopupBox>
+                                            </DataTemplate>
+                                        </DataGridTemplateColumn.CellTemplate>
+                                    </DataGridTemplateColumn>
+                                    <DataGridTemplateColumn Header="Xóa">
+                                        <DataGridTemplateColumn.CellTemplate>
+                                            <DataTemplate>
+                                                <materialDesign:PopupBox IsEnabled="{Binding IsEnable}" DataContext="{StaticResource CT_PhieuDatBanVM}" HorizontalAlignment="Left" PlacementMode="BottomAndAlignCentres" StaysOpen="True" PopupMode="Click"
+                                                                         ToolTip="Xóa chi tiết đặt bàn">
+                                                    <materialDesign:PopupBox.ToggleContent>
+                                                        <materialDesign:PackIcon Kind="Delete" Foreground="#FF0F5699"/>
+                                                    </materialDesign:PopupBox.ToggleContent>
+                                                    <DockPanel>
+                                                        <Label HorizontalAlignment="Center" VerticalAlignment="Top" DockPanel.Dock="Top" Foreground="Red" Content="Cảnh báo"/>
+                                                        <Label HorizontalAlignment="Center" DockPanel.Dock="Top" Content="Bạn có chắc muốn xóa"/>
+                                                        <Label HorizontalAlignment="Center" DockPanel.Dock="Top" Content="Chi tiết đặt bàn này không ?"/>
+                                                        <Button
+                                                            Style="{StaticResource MaterialDesignRaisedButton}"
+                                                            Command="{Binding DeleteCommand}"
+                                                            Grid.Column="2" Margin="5"
+                                                            Width="120" VerticalAlignment="Bottom"
+                                                            ToolTip="Xóa chi tiết đặt bàn" Background="Crimson" Foreground="White">
+                                                            Xác nhận xóa
+                                                        </Button>
+                                                    </DockPanel>
+                                                </materialDesign:PopupBox>
+                                            </DataTemplate>
+                                        </DataGridTemplateColumn.CellTemplate>
+                                    </DataGridTemplateColumn>
+                                    <DataGridTextColumn Header="Tên món ăn" Binding="{Binding MONAN.TenMonAn}" IsReadOnly="True"/>
+                                    <DataGridTextColumn Header="Đơn giá" Binding="{Binding MONAN.DonGia}" IsReadOnly="True"/>
+                                    <DataGridTextColumn Header="Số lượng" Binding="{Binding SoLuong, UpdateSourceTrigger=PropertyChanged}" IsReadOnly="True"/>
+                                    <DataGridTextColumn Header="Thành tiền" Binding="{Binding ThanhTien, UpdateSourceTrigger=PropertyChanged}" IsReadOnly="True"/>
+                                    <DataGridTextColumn Header="Mô tả" Binding="{Binding MONAN.MoTa}" IsReadOnly="True"/>
+                                    <DataGridTextColumn Header="Ghi chú" Binding="{Binding GhiChu}" IsReadOnly="True"/>
+                                </DataGrid.Columns>
+                            </DataGrid>
+                        </GroupBox>
+                    </DockPanel>
+                </materialDesign:Card>
+            </Grid>
+        </DockPanel>
+    </Grid>
+</controls:MetroWindow>

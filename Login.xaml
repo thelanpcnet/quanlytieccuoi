@@ -1,0 +1,198 @@
+﻿<Window x:Class="QuanLyTiecCuoi.Login"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:QuanLyTiecCuoi"
+        xmlns:mah="http://metro.mahapps.com/winfx/xaml/controls" 
+        xmlns:i="http://schemas.microsoft.com/xaml/behaviors" 
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        mc:Ignorable="d"
+        AllowsTransparency="True"
+        Height="300" Width="450" 
+        WindowStyle="None" 
+        ResizeMode="NoResize" WindowStartupLocation="CenterScreen"
+        Background="{x:Null}"
+        Name="Loginwindow"
+        DataContext="{StaticResource LoginVM}">
+    <Window.Resources>
+        <ImageBrush x:Key="close_icon" ImageSource="photos/sdg.png" Stretch="Uniform"/>
+        <ImageBrush x:Key="close_icon_2" ImageSource="photos/sdr.png" Stretch="Uniform"/>
+        <Style x:Key="FocusVisual">
+            <Setter Property="Control.Template">
+                <Setter.Value>
+                    <ControlTemplate>
+                        <Rectangle Margin="2" SnapsToDevicePixels="true" Stroke="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}" StrokeThickness="1" StrokeDashArray="1 2"/>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <SolidColorBrush x:Key="Button.Static.Background" Color="#FFDDDDDD"/>
+        <SolidColorBrush x:Key="Button.Static.Border" Color="#FF707070"/>
+        <SolidColorBrush x:Key="Button.MouseOver.Background" Color="#FFBEE6FD"/>
+        <SolidColorBrush x:Key="Button.MouseOver.Border" Color="#FF3C7FB1"/>
+        <SolidColorBrush x:Key="Button.Pressed.Background" Color="#FFC4E5F6"/>
+        <SolidColorBrush x:Key="Button.Pressed.Border" Color="#FF2C628B"/>
+        <SolidColorBrush x:Key="Button.Disabled.Background" Color="#FFF4F4F4"/>
+        <SolidColorBrush x:Key="Button.Disabled.Border" Color="#FFADB2B5"/>
+        <SolidColorBrush x:Key="Button.Disabled.Foreground" Color="#FF838383"/>
+        <Style x:Key="closeBtnStyle" TargetType="{x:Type Button}">
+            <Setter Property="FocusVisualStyle" Value="{StaticResource FocusVisual}"/>
+            <Setter Property="Background" Value="{StaticResource Button.Static.Background}"/>
+            <Setter Property="BorderBrush" Value="{StaticResource Button.Static.Border}"/>
+            <Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+            <Setter Property="Padding" Value="1"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Border x:Name="border" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" Background="{TemplateBinding Background}" SnapsToDevicePixels="true">
+                            <ContentPresenter x:Name="contentPresenter" Focusable="False" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" Margin="{TemplateBinding Padding}" RecognizesAccessKey="True" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsDefaulted" Value="true">
+                                <Setter Property="BorderBrush" TargetName="border" Value="{DynamicResource {x:Static SystemColors.HighlightBrushKey}}"/>
+                            </Trigger>
+                            <Trigger Property="IsMouseOver" Value="true">
+                                <Setter Property="Background" TargetName="border" Value="{StaticResource close_icon_2}"/>
+                                <Setter Property="BorderBrush" TargetName="border" Value="{StaticResource Button.MouseOver.Border}"/>
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="true">
+                                <Setter Property="Background" TargetName="border" Value="{StaticResource close_icon_2}"/>
+                                <Setter Property="BorderBrush" TargetName="border" Value="{StaticResource Button.Pressed.Border}"/>
+                            </Trigger>
+                            <Trigger Property="IsEnabled" Value="false">
+                                <Setter Property="Background" TargetName="border" Value="{StaticResource Button.Disabled.Background}"/>
+                                <Setter Property="BorderBrush" TargetName="border" Value="{StaticResource Button.Disabled.Border}"/>
+                                <Setter Property="TextElement.Foreground" TargetName="contentPresenter" Value="{StaticResource Button.Disabled.Foreground}"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
+    <Border CornerRadius="15">
+        <Border.Background>
+            <ImageBrush ImageSource="photos/bg.png"/>
+        </Border.Background>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid Grid.Column="0"/>
+            <Grid Grid.Column="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="1*"></RowDefinition>
+                    <RowDefinition Height="1*"></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition Height="0.5*"></RowDefinition>
+                </Grid.RowDefinitions>
+                <TextBlock 
+                    FontFamily="Dancing Script" FontSize="30"
+                    VerticalAlignment="Center"
+                    HorizontalAlignment="Center" FontWeight="Bold" LineHeight="24" Margin="0,15,0,0" Foreground="#FF2DB0AA">
+                Đăng Nhập
+                </TextBlock>
+                <materialDesign:Card Grid.RowSpan="3" Margin="10,75,10,9.667" >
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="0.7*"/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+                        <DockPanel>
+                            <materialDesign:PackIcon Kind="Account" Margin="10,5,0,5" Height="30" Width="30" VerticalAlignment="Center"/>
+                            <TextBox
+                                Margin="10,20,5,20.4"
+                                Text="{Binding Username, Mode=OneWayToSource, UpdateSourceTrigger=PropertyChanged}"
+                                x:Name="tbx_TenDangNhap"
+                                Grid.Row="0"
+                                BorderBrush="#FF080F5D"
+                                BorderThickness="0,0,0,2"
+                                mah:ControlsHelper.MouseOverBorderBrush="RoyalBlue" 
+                                FontSize="15"
+                                Foreground="Black"
+                                mah:TextBoxHelper.Watermark ="Tên Đăng Nhập"
+                                mah:TextBoxHelper.ClearTextButton="{Binding RelativeSource = {RelativeSource Self},
+                                Path=(mah:TextBoxHelper.HasText), Mode=OneWay}"
+                                VerticalAlignment="Center">
+                            </TextBox>
+                        </DockPanel>
+                        <DockPanel Grid.Row="1" Margin="0,0,0,10">
+                            <materialDesign:PackIcon Margin="13,5,4,10" Kind="Key"  Height="30" Width="24" VerticalAlignment="Top" Grid.Row="1"/>
+                            <PasswordBox
+                                x:Name="pwb_MatKhau"
+                                Grid.Row="1"
+                                FontSize="15"
+                                Margin="9,0,5,0"
+                                BorderBrush="#FF080F5D"
+                                VerticalAlignment="Top"
+                                Foreground="Black"
+                                BorderThickness="0,0,0,2"
+                                mah:TextBoxHelper.Watermark="Mật Khẩu"
+                                mah:TextBoxHelper.ClearTextButton="{Binding RelativeSource = {RelativeSource Self},
+                                Path=(mah:TextBoxHelper.HasText), Mode=OneWay}"
+                                Style="{StaticResource MahApps.Styles.PasswordBox.Win8}"
+                                mah:ControlsHelper.MouseOverBorderBrush="RoyalBlue" >
+                                <i:Interaction.Triggers>
+                                    <i:EventTrigger EventName="PasswordChanged" >
+                                        <i:InvokeCommandAction Command="{Binding PasswordChangedCommand }"  
+                                                           CommandParameter="{Binding ElementName=pwb_MatKhau,  Mode=OneWay}"/>
+                                    </i:EventTrigger>
+                                </i:Interaction.Triggers>
+                            </PasswordBox>
+                        </DockPanel>
+                        <CheckBox
+                            HorizontalAlignment="Center"
+                            Grid.Row="1"
+                            VerticalAlignment="Center"
+                            Name="cbx_NhoMatKhau"
+                            mah:CheckBoxHelper.CheckBackgroundFillChecked="#FFFF6425"
+                            mah:CheckBoxHelper.CheckBackgroundFillUncheckedMouseOver="Transparent"
+                            mah:CheckBoxHelper.CheckBackgroundFillCheckedMouseOver="#FFFF6425"
+                            FontSize="17"
+                            Content="    Nhớ mật khẩu" FontWeight="Normal" FontFamily="Times New Roman" 
+                            Checked="cbx_NhoMatKhau_Checked"
+                            Unchecked="cbx_NhoMatKhau_Unchecked" 
+                            mah:CheckBoxHelper.CheckGlyphForegroundChecked="Black" 
+                            mah:CheckBoxHelper.CheckGlyphForegroundCheckedMouseOver="Black" 
+                            mah:CheckBoxHelper.CheckGlyphForegroundCheckedPressed="Black" Margin="15,47.6,9.8,34.2" Width="180"/>
+                    </Grid>
+                </materialDesign:Card>
+                <Button Grid.Row="2"
+                        Background="#FF2DB0AA"
+                        Command="{Binding LoginCommand}"
+                        Style="{StaticResource MaterialDesignRaisedButton}"
+                        materialDesign:ButtonProgressAssist.Value="-1"
+                        materialDesign:ButtonProgressAssist.IsIndicatorVisible="True"
+                        materialDesign:ButtonProgressAssist.IsIndeterminate="True"
+                        CommandParameter="{Binding ElementName=Loginwindow}"
+                        Foreground="White"
+                        Click="Button_Click"
+                        BorderThickness="0"
+                        FontSize="15"
+                        FontWeight="DemiBold"
+                        Content="Đăng Nhập" 
+                        Margin="44,85,44,8.333" 
+                        mah:ControlsHelper.ContentCharacterCasing="Normal" 
+                        Height="Auto" Grid.RowSpan="2" />
+            </Grid>
+            <Button 
+                Style="{StaticResource closeBtnStyle}"
+                HorizontalAlignment="Right" VerticalAlignment="Top"
+                Foreground="Black" x:Name="btn_Close"
+                BorderBrush="Transparent"
+                BorderThickness="0"
+                Click="btn_Close_Click"
+                Grid.Column="1" mah:ControlsHelper.FocusBorderBrush="{x:Null}" 
+                Margin="5" Height="20" Width="20">
+                <Button.Background>
+                    <ImageBrush ImageSource="photos/sdg.png" Stretch="Uniform"/>
+                </Button.Background>
+            </Button>
+        </Grid>
+    </Border>
+</Window>

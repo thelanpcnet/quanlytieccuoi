@@ -1,0 +1,426 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DatabaseModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="BAOCAONGAY">
+    <Key>
+      <PropertyRef Name="MaBaoCaoThang" />
+      <PropertyRef Name="Ngay" />
+    </Key>
+    <Property Name="MaBaoCaoThang" Type="Int32" Nullable="false" />
+    <Property Name="Ngay" Type="Int32" Nullable="false" />
+    <Property Name="SoLuongTiecCuoi" Type="Int32" Nullable="false" />
+    <Property Name="DoanhThu" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+    <Property Name="TiLe" Type="Double" Nullable="false" />
+    <NavigationProperty Name="BAOCAOTHANG" Relationship="Self.FK__BAOCAONGA__MaBao__4222D4EF" FromRole="BAOCAONGAY" ToRole="BAOCAOTHANG" />
+  </EntityType>
+  <EntityType Name="BAOCAOTHANG">
+    <Key>
+      <PropertyRef Name="MaBaoCaoThang" />
+    </Key>
+    <Property Name="MaBaoCaoThang" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Thang" Type="Int32" Nullable="false" />
+    <Property Name="Nam" Type="Int32" Nullable="false" />
+    <Property Name="TongDoanhThu" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+    <NavigationProperty Name="BAOCAONGAYs" Relationship="Self.FK__BAOCAONGA__MaBao__4222D4EF" FromRole="BAOCAOTHANG" ToRole="BAOCAONGAY" />
+  </EntityType>
+  <EntityType Name="CA">
+    <Key>
+      <PropertyRef Name="MaCa" />
+    </Key>
+    <Property Name="MaCa" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TenCa" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="BatDau" Type="Time" Nullable="false" Precision="7" />
+    <Property Name="KetThuc" Type="Time" Nullable="false" Precision="7" />
+    <NavigationProperty Name="TIECCUOIs" Relationship="Self.FK__TIECCUOI__MaCa__4CA06362" FromRole="CA" ToRole="TIECCUOI" />
+  </EntityType>
+  <EntityType Name="CHUCNANG">
+    <Key>
+      <PropertyRef Name="MaChucNang" />
+    </Key>
+    <Property Name="MaChucNang" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TenChucNang" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="TenManHinhDuocLoad" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="PHANQUYENs" Relationship="Self.FK__PHANQUYEN__MaChu__46E78A0C" FromRole="CHUCNANG" ToRole="PHANQUYEN" />
+  </EntityType>
+  <EntityType Name="CT_PHIEUDATBAN">
+    <Key>
+      <PropertyRef Name="MaPhieuDatBan" />
+      <PropertyRef Name="MaMonAn" />
+    </Key>
+    <Property Name="MaPhieuDatBan" Type="Int32" Nullable="false" />
+    <Property Name="MaMonAn" Type="Int32" Nullable="false" />
+    <Property Name="SoLuong" Type="Int32" Nullable="false" />
+    <Property Name="ThanhTien" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+    <NavigationProperty Name="MONAN" Relationship="Self.FK__CT_PHIEUD__MaMon__4316F928" FromRole="CT_PHIEUDATBAN" ToRole="MONAN" />
+    <NavigationProperty Name="PHIEUDATBAN" Relationship="Self.FK__CT_PHIEUD__MaPhi__440B1D61" FromRole="CT_PHIEUDATBAN" ToRole="PHIEUDATBAN" />
+    <Property Name="GhiChu" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="DICHVU">
+    <Key>
+      <PropertyRef Name="MaDichVu" />
+    </Key>
+    <Property Name="MaDichVu" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TenDichVu" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="DonGia" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+    <Property Name="MoTa" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="HinhAnh" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="GhiChu" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="PHIEUDATDICHVUs" Relationship="Self.FK__PHIEUDATD__MaDic__49C3F6B7" FromRole="DICHVU" ToRole="PHIEUDATDICHVU" />
+  </EntityType>
+  <EntityType Name="HOADON">
+    <Key>
+      <PropertyRef Name="MaHoaDon" />
+    </Key>
+    <Property Name="MaHoaDon" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TongTienBan" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+    <Property Name="TongTienDichVu" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+    <Property Name="TongTienHoaDon" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+    <Property Name="ConLai" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+    <Property Name="NgayThanhToan" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="MaTiecCuoi" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="TIECCUOI" Relationship="Self.FK__HOADON__MaTiecCu__44FF419A" FromRole="HOADON" ToRole="TIECCUOI" />
+  </EntityType>
+  <EntityType Name="LOAISANH">
+    <Key>
+      <PropertyRef Name="MaLoaiSanh" />
+    </Key>
+    <Property Name="MaLoaiSanh" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TenLoaiSanh" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="DonGiaBanToiThieu" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+    <NavigationProperty Name="SANHs" Relationship="Self.FK__SANH__MaLoaiSanh__4BAC3F29" FromRole="LOAISANH" ToRole="SANH" />
+  </EntityType>
+  <EntityType Name="MONAN">
+    <Key>
+      <PropertyRef Name="MaMonAn" />
+    </Key>
+    <Property Name="MaMonAn" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TenMonAn" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="DonGia" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+    <Property Name="MoTa" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="HinhAnh" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="GhiChu" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="CT_PHIEUDATBAN" Relationship="Self.FK__CT_PHIEUD__MaMon__4316F928" FromRole="MONAN" ToRole="CT_PHIEUDATBAN" />
+  </EntityType>
+  <EntityType Name="NGUOIDUNG">
+    <Key>
+      <PropertyRef Name="Username" />
+    </Key>
+    <Property Name="Username" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Password" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="TenNguoiDung" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="MaNhomNguoiDung" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="NHOMNGUOIDUNG" Relationship="Self.FK__NGUOIDUNG__MaNho__45F365D3" FromRole="NGUOIDUNG" ToRole="NHOMNGUOIDUNG" />
+  </EntityType>
+  <EntityType Name="NHOMNGUOIDUNG">
+    <Key>
+      <PropertyRef Name="MaNhomNguoiDung" />
+    </Key>
+    <Property Name="MaNhomNguoiDung" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TenNhomNguoiDung" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="NGUOIDUNGs" Relationship="Self.FK__NGUOIDUNG__MaNho__45F365D3" FromRole="NHOMNGUOIDUNG" ToRole="NGUOIDUNG" />
+    <NavigationProperty Name="PHANQUYENs" Relationship="Self.FK__PHANQUYEN__MaNho__47DBAE45" FromRole="NHOMNGUOIDUNG" ToRole="PHANQUYEN" />
+  </EntityType>
+  <EntityType Name="PHANQUYEN">
+    <Key>
+      <PropertyRef Name="MaChucNang" />
+      <PropertyRef Name="MaNhomNguoiDung" />
+    </Key>
+    <Property Name="MaChucNang" Type="Int32" Nullable="false" />
+    <Property Name="MaNhomNguoiDung" Type="Int32" Nullable="false" />
+    <Property Name="GhiChu" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="CHUCNANG" Relationship="Self.FK__PHANQUYEN__MaChu__46E78A0C" FromRole="PHANQUYEN" ToRole="CHUCNANG" />
+    <NavigationProperty Name="NHOMNGUOIDUNG" Relationship="Self.FK__PHANQUYEN__MaNho__47DBAE45" FromRole="PHANQUYEN" ToRole="NHOMNGUOIDUNG" />
+  </EntityType>
+  <EntityType Name="PHIEUDATBAN">
+    <Key>
+      <PropertyRef Name="MaPhieuDatBan" />
+    </Key>
+    <Property Name="MaPhieuDatBan" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="MaTiecCuoi" Type="Int32" Nullable="false" />
+    <Property Name="LoaiBan" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="SoLuong" Type="Int32" Nullable="false" />
+    <Property Name="SoLuongDuTru" Type="Int32" Nullable="false" />
+    <Property Name="DonGiaBan" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+    <Property Name="GhiChu" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="CT_PHIEUDATBAN" Relationship="Self.FK__CT_PHIEUD__MaPhi__440B1D61" FromRole="PHIEUDATBAN" ToRole="CT_PHIEUDATBAN" />
+    <NavigationProperty Name="TIECCUOI" Relationship="Self.FK__PHIEUDATB__MaTie__48CFD27E" FromRole="PHIEUDATBAN" ToRole="TIECCUOI" />
+  </EntityType>
+  <EntityType Name="PHIEUDATDICHVU">
+    <Key>
+      <PropertyRef Name="MaTiecCuoi" />
+      <PropertyRef Name="MaDichVu" />
+    </Key>
+    <Property Name="MaTiecCuoi" Type="Int32" Nullable="false" />
+    <Property Name="MaDichVu" Type="Int32" Nullable="false" />
+    <Property Name="SoLuong" Type="Int32" Nullable="false" />
+    <Property Name="ThanhTien" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+    <NavigationProperty Name="DICHVU" Relationship="Self.FK__PHIEUDATD__MaDic__49C3F6B7" FromRole="PHIEUDATDICHVU" ToRole="DICHVU" />
+    <NavigationProperty Name="TIECCUOI" Relationship="Self.FK__PHIEUDATD__MaTie__4AB81AF0" FromRole="PHIEUDATDICHVU" ToRole="TIECCUOI" />
+    <Property Name="GhiChu" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="SANH">
+    <Key>
+      <PropertyRef Name="MaSanh" />
+    </Key>
+    <Property Name="MaSanh" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TenSanh" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="SoLuongBanToiDa" Type="Int32" Nullable="false" />
+    <Property Name="GhiChu" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="MaLoaiSanh" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="LOAISANH" Relationship="Self.FK__SANH__MaLoaiSanh__4BAC3F29" FromRole="SANH" ToRole="LOAISANH" />
+    <NavigationProperty Name="TIECCUOIs" Relationship="Self.FK__TIECCUOI__MaSanh__4D94879B" FromRole="SANH" ToRole="TIECCUOI" />
+  </EntityType>
+  <EntityType Name="THAMSO">
+    <Key>
+      <PropertyRef Name="TenThamSo" />
+    </Key>
+    <Property Name="TenThamSo" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="GiaTri" Type="Double" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TIECCUOI">
+    <Key>
+      <PropertyRef Name="MaTiecCuoi" />
+    </Key>
+    <Property Name="MaTiecCuoi" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TenChuRe" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="TenCoDau" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="SoDienThoai" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="NgayDatTiec" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="NgayDaiTiec" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="TienDatCoc" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+    <Property Name="GhiChu" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="MaSanh" Type="Int32" Nullable="false" />
+    <Property Name="MaCa" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="CA" Relationship="Self.FK__TIECCUOI__MaCa__4CA06362" FromRole="TIECCUOI" ToRole="CA" />
+    <NavigationProperty Name="HOADONs" Relationship="Self.FK__HOADON__MaTiecCu__44FF419A" FromRole="TIECCUOI" ToRole="HOADON" />
+    <NavigationProperty Name="PHIEUDATBANs" Relationship="Self.FK__PHIEUDATB__MaTie__48CFD27E" FromRole="TIECCUOI" ToRole="PHIEUDATBAN" />
+    <NavigationProperty Name="PHIEUDATDICHVUs" Relationship="Self.FK__PHIEUDATD__MaTie__4AB81AF0" FromRole="TIECCUOI" ToRole="PHIEUDATDICHVU" />
+    <NavigationProperty Name="SANH" Relationship="Self.FK__TIECCUOI__MaSanh__4D94879B" FromRole="TIECCUOI" ToRole="SANH" />
+  </EntityType>
+  <Association Name="FK__BAOCAONGA__MaBao__4222D4EF">
+    <End Role="BAOCAOTHANG" Type="Self.BAOCAOTHANG" Multiplicity="1" />
+    <End Role="BAOCAONGAY" Type="Self.BAOCAONGAY" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="BAOCAOTHANG">
+        <PropertyRef Name="MaBaoCaoThang" />
+      </Principal>
+      <Dependent Role="BAOCAONGAY">
+        <PropertyRef Name="MaBaoCaoThang" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__TIECCUOI__MaCa__4CA06362">
+    <End Role="CA" Type="Self.CA" Multiplicity="1" />
+    <End Role="TIECCUOI" Type="Self.TIECCUOI" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CA">
+        <PropertyRef Name="MaCa" />
+      </Principal>
+      <Dependent Role="TIECCUOI">
+        <PropertyRef Name="MaCa" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__PHANQUYEN__MaChu__46E78A0C">
+    <End Role="CHUCNANG" Type="Self.CHUCNANG" Multiplicity="1" />
+    <End Role="PHANQUYEN" Type="Self.PHANQUYEN" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CHUCNANG">
+        <PropertyRef Name="MaChucNang" />
+      </Principal>
+      <Dependent Role="PHANQUYEN">
+        <PropertyRef Name="MaChucNang" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__CT_PHIEUD__MaMon__4316F928">
+    <End Role="MONAN" Type="Self.MONAN" Multiplicity="1" />
+    <End Role="CT_PHIEUDATBAN" Type="Self.CT_PHIEUDATBAN" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MONAN">
+        <PropertyRef Name="MaMonAn" />
+      </Principal>
+      <Dependent Role="CT_PHIEUDATBAN">
+        <PropertyRef Name="MaMonAn" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__CT_PHIEUD__MaPhi__440B1D61">
+    <End Role="PHIEUDATBAN" Type="Self.PHIEUDATBAN" Multiplicity="1" />
+    <End Role="CT_PHIEUDATBAN" Type="Self.CT_PHIEUDATBAN" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PHIEUDATBAN">
+        <PropertyRef Name="MaPhieuDatBan" />
+      </Principal>
+      <Dependent Role="CT_PHIEUDATBAN">
+        <PropertyRef Name="MaPhieuDatBan" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__PHIEUDATD__MaDic__49C3F6B7">
+    <End Role="DICHVU" Type="Self.DICHVU" Multiplicity="1" />
+    <End Role="PHIEUDATDICHVU" Type="Self.PHIEUDATDICHVU" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DICHVU">
+        <PropertyRef Name="MaDichVu" />
+      </Principal>
+      <Dependent Role="PHIEUDATDICHVU">
+        <PropertyRef Name="MaDichVu" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__HOADON__MaTiecCu__44FF419A">
+    <End Role="TIECCUOI" Type="Self.TIECCUOI" Multiplicity="1" />
+    <End Role="HOADON" Type="Self.HOADON" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TIECCUOI">
+        <PropertyRef Name="MaTiecCuoi" />
+      </Principal>
+      <Dependent Role="HOADON">
+        <PropertyRef Name="MaTiecCuoi" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__SANH__MaLoaiSanh__4BAC3F29">
+    <End Role="LOAISANH" Type="Self.LOAISANH" Multiplicity="1" />
+    <End Role="SANH" Type="Self.SANH" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="LOAISANH">
+        <PropertyRef Name="MaLoaiSanh" />
+      </Principal>
+      <Dependent Role="SANH">
+        <PropertyRef Name="MaLoaiSanh" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__NGUOIDUNG__MaNho__45F365D3">
+    <End Role="NHOMNGUOIDUNG" Type="Self.NHOMNGUOIDUNG" Multiplicity="1" />
+    <End Role="NGUOIDUNG" Type="Self.NGUOIDUNG" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="NHOMNGUOIDUNG">
+        <PropertyRef Name="MaNhomNguoiDung" />
+      </Principal>
+      <Dependent Role="NGUOIDUNG">
+        <PropertyRef Name="MaNhomNguoiDung" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__PHANQUYEN__MaNho__47DBAE45">
+    <End Role="NHOMNGUOIDUNG" Type="Self.NHOMNGUOIDUNG" Multiplicity="1" />
+    <End Role="PHANQUYEN" Type="Self.PHANQUYEN" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="NHOMNGUOIDUNG">
+        <PropertyRef Name="MaNhomNguoiDung" />
+      </Principal>
+      <Dependent Role="PHANQUYEN">
+        <PropertyRef Name="MaNhomNguoiDung" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__PHIEUDATB__MaTie__48CFD27E">
+    <End Role="TIECCUOI" Type="Self.TIECCUOI" Multiplicity="1" />
+    <End Role="PHIEUDATBAN" Type="Self.PHIEUDATBAN" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TIECCUOI">
+        <PropertyRef Name="MaTiecCuoi" />
+      </Principal>
+      <Dependent Role="PHIEUDATBAN">
+        <PropertyRef Name="MaTiecCuoi" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__PHIEUDATD__MaTie__4AB81AF0">
+    <End Role="TIECCUOI" Type="Self.TIECCUOI" Multiplicity="1" />
+    <End Role="PHIEUDATDICHVU" Type="Self.PHIEUDATDICHVU" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TIECCUOI">
+        <PropertyRef Name="MaTiecCuoi" />
+      </Principal>
+      <Dependent Role="PHIEUDATDICHVU">
+        <PropertyRef Name="MaTiecCuoi" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__TIECCUOI__MaSanh__4D94879B">
+    <End Role="SANH" Type="Self.SANH" Multiplicity="1" />
+    <End Role="TIECCUOI" Type="Self.TIECCUOI" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SANH">
+        <PropertyRef Name="MaSanh" />
+      </Principal>
+      <Dependent Role="TIECCUOI">
+        <PropertyRef Name="MaSanh" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="QuanLyTiecCuoiEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="BAOCAONGAYs" EntityType="Self.BAOCAONGAY" />
+    <EntitySet Name="BAOCAOTHANGs" EntityType="Self.BAOCAOTHANG" />
+    <EntitySet Name="CAs" EntityType="Self.CA" />
+    <EntitySet Name="CHUCNANGs" EntityType="Self.CHUCNANG" />
+    <EntitySet Name="CT_PHIEUDATBAN" EntityType="Self.CT_PHIEUDATBAN" />
+    <EntitySet Name="DICHVUs" EntityType="Self.DICHVU" />
+    <EntitySet Name="HOADONs" EntityType="Self.HOADON" />
+    <EntitySet Name="LOAISANHs" EntityType="Self.LOAISANH" />
+    <EntitySet Name="MONANs" EntityType="Self.MONAN" />
+    <EntitySet Name="NGUOIDUNGs" EntityType="Self.NGUOIDUNG" />
+    <EntitySet Name="NHOMNGUOIDUNGs" EntityType="Self.NHOMNGUOIDUNG" />
+    <EntitySet Name="PHANQUYENs" EntityType="Self.PHANQUYEN" />
+    <EntitySet Name="PHIEUDATBANs" EntityType="Self.PHIEUDATBAN" />
+    <EntitySet Name="PHIEUDATDICHVUs" EntityType="Self.PHIEUDATDICHVU" />
+    <EntitySet Name="SANHs" EntityType="Self.SANH" />
+    <EntitySet Name="THAMSOes" EntityType="Self.THAMSO" />
+    <EntitySet Name="TIECCUOIs" EntityType="Self.TIECCUOI" />
+    <AssociationSet Name="FK__BAOCAONGA__MaBao__4222D4EF" Association="Self.FK__BAOCAONGA__MaBao__4222D4EF">
+      <End Role="BAOCAOTHANG" EntitySet="BAOCAOTHANGs" />
+      <End Role="BAOCAONGAY" EntitySet="BAOCAONGAYs" />
+    </AssociationSet>
+    <AssociationSet Name="FK__TIECCUOI__MaCa__4CA06362" Association="Self.FK__TIECCUOI__MaCa__4CA06362">
+      <End Role="CA" EntitySet="CAs" />
+      <End Role="TIECCUOI" EntitySet="TIECCUOIs" />
+    </AssociationSet>
+    <AssociationSet Name="FK__PHANQUYEN__MaChu__46E78A0C" Association="Self.FK__PHANQUYEN__MaChu__46E78A0C">
+      <End Role="CHUCNANG" EntitySet="CHUCNANGs" />
+      <End Role="PHANQUYEN" EntitySet="PHANQUYENs" />
+    </AssociationSet>
+    <AssociationSet Name="FK__CT_PHIEUD__MaMon__4316F928" Association="Self.FK__CT_PHIEUD__MaMon__4316F928">
+      <End Role="MONAN" EntitySet="MONANs" />
+      <End Role="CT_PHIEUDATBAN" EntitySet="CT_PHIEUDATBAN" />
+    </AssociationSet>
+    <AssociationSet Name="FK__CT_PHIEUD__MaPhi__440B1D61" Association="Self.FK__CT_PHIEUD__MaPhi__440B1D61">
+      <End Role="PHIEUDATBAN" EntitySet="PHIEUDATBANs" />
+      <End Role="CT_PHIEUDATBAN" EntitySet="CT_PHIEUDATBAN" />
+    </AssociationSet>
+    <AssociationSet Name="FK__PHIEUDATD__MaDic__49C3F6B7" Association="Self.FK__PHIEUDATD__MaDic__49C3F6B7">
+      <End Role="DICHVU" EntitySet="DICHVUs" />
+      <End Role="PHIEUDATDICHVU" EntitySet="PHIEUDATDICHVUs" />
+    </AssociationSet>
+    <AssociationSet Name="FK__HOADON__MaTiecCu__44FF419A" Association="Self.FK__HOADON__MaTiecCu__44FF419A">
+      <End Role="TIECCUOI" EntitySet="TIECCUOIs" />
+      <End Role="HOADON" EntitySet="HOADONs" />
+    </AssociationSet>
+    <AssociationSet Name="FK__SANH__MaLoaiSanh__4BAC3F29" Association="Self.FK__SANH__MaLoaiSanh__4BAC3F29">
+      <End Role="LOAISANH" EntitySet="LOAISANHs" />
+      <End Role="SANH" EntitySet="SANHs" />
+    </AssociationSet>
+    <AssociationSet Name="FK__NGUOIDUNG__MaNho__45F365D3" Association="Self.FK__NGUOIDUNG__MaNho__45F365D3">
+      <End Role="NHOMNGUOIDUNG" EntitySet="NHOMNGUOIDUNGs" />
+      <End Role="NGUOIDUNG" EntitySet="NGUOIDUNGs" />
+    </AssociationSet>
+    <AssociationSet Name="FK__PHANQUYEN__MaNho__47DBAE45" Association="Self.FK__PHANQUYEN__MaNho__47DBAE45">
+      <End Role="NHOMNGUOIDUNG" EntitySet="NHOMNGUOIDUNGs" />
+      <End Role="PHANQUYEN" EntitySet="PHANQUYENs" />
+    </AssociationSet>
+    <AssociationSet Name="FK__PHIEUDATB__MaTie__48CFD27E" Association="Self.FK__PHIEUDATB__MaTie__48CFD27E">
+      <End Role="TIECCUOI" EntitySet="TIECCUOIs" />
+      <End Role="PHIEUDATBAN" EntitySet="PHIEUDATBANs" />
+    </AssociationSet>
+    <AssociationSet Name="FK__PHIEUDATD__MaTie__4AB81AF0" Association="Self.FK__PHIEUDATD__MaTie__4AB81AF0">
+      <End Role="TIECCUOI" EntitySet="TIECCUOIs" />
+      <End Role="PHIEUDATDICHVU" EntitySet="PHIEUDATDICHVUs" />
+    </AssociationSet>
+    <AssociationSet Name="FK__TIECCUOI__MaSanh__4D94879B" Association="Self.FK__TIECCUOI__MaSanh__4D94879B">
+      <End Role="SANH" EntitySet="SANHs" />
+      <End Role="TIECCUOI" EntitySet="TIECCUOIs" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
